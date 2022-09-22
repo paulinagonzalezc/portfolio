@@ -9,10 +9,17 @@ section {
   height: 1020px;
   width: 375px;
   border: 1px solid #ccc;
+  background-image: url("header-ilustration.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-y: 98px;
 }
-
+section .mobile-bar {
+  width: 375px;
+}
 section > .toolbar {
   display: flex;
+  justify-content: space-between;
 }
 
 section > .toolbar .logo {
@@ -26,14 +33,13 @@ section > .toolbar .logo {
   line-height: 28px;
 }
 
-section > .toolbar img {
-  padding: 8px;
-}
-
-.presentation {
-  background-image: url("header-ilustration.png");
-  background-repeat: no-repeat;
-  background-size: cover;
+.menu {
+  display: flex;
+  align-items: center;
+  height: 24px;
+  width: 24px;
+  padding: 16px 16px;
+  right: 24px;
 }
 
 .presentation .title,
@@ -45,6 +51,7 @@ section > .toolbar img {
   line-height: 52px;
   letter-spacing: 0em;
   text-align: center;
+  margin-top: 64px;
 }
 .second-title {
   color: #36b37f;
@@ -61,7 +68,7 @@ section > .toolbar img {
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
-
+  margin: 20px 24px;
   text-align: center;
   color: #172b4d;
 }
