@@ -19,6 +19,7 @@ body {
 .mobile-bar {
   width: 375px;
 }
+
 .toolbar {
   display: flex;
   justify-content: space-between;
@@ -42,6 +43,7 @@ body {
   padding: 16px 16px;
   right: 24px;
 }
+
 .menu:hover {
   background-color: whitesmoke;
   border-radius: 10px;
@@ -53,7 +55,7 @@ body {
   font-size: 40px;
   font-weight: 700;
   line-height: 52px;
-  letter-spacing: 0em;
+  letter-spacing: 0;
   text-align: center;
   margin-top: 64px;
   font-style: normal;
@@ -62,6 +64,7 @@ body {
 .title {
   margin-bottom: 0;
 }
+
 .second-title {
   color: #36b37f;
   margin-top: 0;
@@ -76,6 +79,7 @@ body {
   text-align: center;
   color: #172b4d;
 }
+
 .social {
   width: 20px;
   height: 20px;
