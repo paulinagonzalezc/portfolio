@@ -5,7 +5,7 @@ body {
   align-items: center;
 }
 
-section {
+.container {
   height: 1020px;
   width: 375px;
   border: 1px solid #ccc;
@@ -14,15 +14,16 @@ section {
   background-size: contain;
   background-position-y: 98px;
 }
-section .mobile-bar {
+
+.mobile-bar {
   width: 375px;
 }
-section > .toolbar {
+.toolbar {
   display: flex;
   justify-content: space-between;
 }
 
-section > .toolbar .logo {
+.tool {
   display: flex;
   align-items: center;
   padding: 10px 12px;
@@ -41,9 +42,12 @@ section > .toolbar .logo {
   padding: 16px 16px;
   right: 24px;
 }
+.menu:hover {
+  background-color: whitesmoke;
+  border-radius: 10px;
+}
 
-.presentation .title,
-.second-title {
+.present {
   color: #172b4d;
   font-family: Inter;
   font-size: 40px;
@@ -53,13 +57,13 @@ section > .toolbar .logo {
   text-align: center;
   margin-top: 64px;
 }
-.second-title {
-  color: #36b37f;
-  margin-top: 0;
-}
 
 .title {
   margin-bottom: 0;
+}
+.second-title {
+  color: #36b37f;
+  margin-top: 0;
 }
 
 .personal-description {
@@ -77,6 +81,12 @@ section > .toolbar .logo {
   height: 20px;
   padding: 10px;
 }
+
+.social:hover {
+  background-color: whitesmoke;
+  border-radius: 10px;
+}
+
 .social-media {
   padding-top: 38px;
   display: flex;
