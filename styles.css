@@ -72,3 +72,13 @@ section > .toolbar .logo {
   text-align: center;
   color: #172b4d;
 }
+.social {
+  width: 20px;
+  height: 20px;
+  padding: 10px;
+}
+.social-media {
+  padding-top: 38px;
+  display: flex;
+  justify-content: center;
+}
