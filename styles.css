@@ -10,7 +10,7 @@ body {
   height: 1020px;
   width: 375px;
   border: 1px solid #ccc;
-  background-image: url("header-ilustration.png");
+  background-image: url("images/header-ilustration.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position-y: 98px;
@@ -30,7 +30,10 @@ body {
   font-size: 20px;
   line-height: 28px;
 }
-
+.logo {
+  text-decoration: none;
+  color: #172b4d;
+}
 .menu {
   display: flex;
   align-items: center;
@@ -90,6 +93,8 @@ body {
 
 .social-media {
   padding-top: 38px;
+  padding-left: 0px;
   display: flex;
   justify-content: center;
+  list-style-type: none;
 }
