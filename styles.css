@@ -1,0 +1,67 @@
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  height: 1020px;
+  width: 375px;
+  border: 1px solid #ccc;
+}
+
+section > .toolbar {
+  display: flex;
+}
+
+section > .toolbar .logo {
+  display: flex;
+  align-items: center;
+  padding: 10px 12px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+section > .toolbar img {
+  padding: 8px;
+}
+
+.presentation {
+  background-image: url("header-ilustration.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.presentation .title,
+.second-title {
+  color: #172b4d;
+  font-family: Inter;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 52px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.second-title {
+  color: #36b37f;
+  margin-top: 0;
+}
+
+.title {
+  margin-bottom: 0;
+}
+
+.personal-description {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+
+  text-align: center;
+  color: #172b4d;
+}
