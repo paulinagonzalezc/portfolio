@@ -16,10 +16,6 @@ body {
   background-position-y: 98px;
 }
 
-.mobile-bar {
-  width: 375px;
-}
-
 .toolbar {
   display: flex;
   justify-content: space-between;
