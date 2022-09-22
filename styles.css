@@ -3,6 +3,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: "Inter", sans-serif;
 }
 
 .container {
@@ -27,7 +28,6 @@ body {
   display: flex;
   align-items: center;
   padding: 10px 12px;
-  font-family: "Inter";
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
@@ -45,17 +45,18 @@ body {
 .menu:hover {
   background-color: whitesmoke;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 .present {
   color: #172b4d;
-  font-family: Inter;
   font-size: 40px;
   font-weight: 700;
   line-height: 52px;
   letter-spacing: 0em;
   text-align: center;
   margin-top: 64px;
+  font-style: normal;
 }
 
 .title {
@@ -67,7 +68,6 @@ body {
 }
 
 .personal-description {
-  font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -85,6 +85,7 @@ body {
 .social:hover {
   background-color: whitesmoke;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 .social-media {
