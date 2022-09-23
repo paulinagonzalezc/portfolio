@@ -1,13 +1,11 @@
 body {
-  min-height: 100vh;
+  font-family: "Inter", sans-serif;
   display: flex;
   justify-content: center;
-  align-items: center;
-  font-family: "Inter", sans-serif;
 }
 
-.top-section {
-  height: 1020px;
+.container {
+  height: 6715px;
   width: 375px;
   border: 1px solid #ccc;
   background-image: url("images/header-ilustration.png");
@@ -16,6 +14,9 @@ body {
   background-position-y: 98px;
 }
 
+.top-part {
+  align-items: center;
+}
 .toolbar {
   display: flex;
   justify-content: space-between;
@@ -99,4 +100,35 @@ body {
   display: flex;
   justify-content: center;
   list-style-type: none;
+}
+
+.division {
+  display: flex;
+  justify-content: center;
+}
+
+.arrow {
+  width: 40px;
+  height: 40px;
+  margin-top: 48px;
+}
+
+.middle-part {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  background: #ebf0ee;
+  border: 1px solid #d0d9d4;
+  border-radius: 8px;
+  height: 474px;
+  width: 327px;
+}
+
+.card-content {
+  height: 222px;
+  border-radius: 8px;
+  padding: 16px;
+  background: #ffffff;
 }
