@@ -208,11 +208,16 @@ body {
   margin-bottom: 15px;
 }
 
-.project-button {
+.about-button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.about-button {
   border: none;
   background: #36b37f;
   border-radius: 4px;
-  width: 122px;
+  width: 159px;
   height: 48px;
   font-size: 17px;
   font-weight: 500;
@@ -224,4 +229,22 @@ body {
 
 .project-button:hover {
   cursor: pointer;
+}
+
+.about-me-title {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 52px;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.about-me-description {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 32px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #42526e;
+  margin: 0px 12px 24px;
 }
