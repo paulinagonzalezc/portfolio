@@ -226,7 +226,7 @@ body {
 
 .about-button-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   margin-bottom: 59px;
 }
 
@@ -242,19 +242,36 @@ body {
   letter-spacing: 0.03em;
   text-align: center;
   color: #fff;
+  margin-right: 105px;
 }
 
 .about-button:hover {
   cursor: pointer;
 }
 
+.about-me-header {
+  display: flex;
+  justify-content: space-between;
+}
+
 .about-me-title {
+  margin-left: 90px;
   font-size: 40px;
   font-weight: 700;
   line-height: 52px;
   text-align: center;
   margin-bottom: 24px;
   color: #172b4d;
+}
+
+.about-me-image1 {
+  height: 127px;
+  width: 68px;
+}
+
+.about-me-image2 {
+  height: 57px;
+  width: 70px;
 }
 
 .about-me-description {
