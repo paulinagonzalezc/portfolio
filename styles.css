@@ -1,19 +1,21 @@
 body {
-  min-height: 100vh;
+  font-family: "Inter", sans-serif;
   display: flex;
   justify-content: center;
-  align-items: center;
-  font-family: "Inter", sans-serif;
 }
 
 .container {
-  height: 1020px;
+  height: 6715px;
   width: 375px;
   border: 1px solid #ccc;
   background-image: url("images/header-ilustration.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position-y: 98px;
+}
+
+.top-part {
+  align-items: center;
 }
 
 .toolbar {
@@ -56,7 +58,6 @@ body {
   font-size: 40px;
   font-weight: 700;
   line-height: 52px;
-  letter-spacing: 0;
   text-align: center;
   margin-top: 64px;
   font-style: normal;
@@ -99,4 +100,367 @@ body {
   display: flex;
   justify-content: center;
   list-style-type: none;
+}
+
+.division {
+  display: flex;
+  justify-content: center;
+}
+
+.arrow {
+  width: 40px;
+  height: 40px;
+  margin-top: 48px;
+}
+
+.middle-part {
+  display: flex;
+  justify-content: center;
+}
+
+.works-title1,
+.works-title2 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 52px;
+  display: flex;
+  justify-content: center;
+}
+
+.works-title1 {
+  margin-bottom: 0;
+}
+
+.works-title2 {
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+.middle-icon {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 62px;
+}
+
+.indicator {
+  width: 48px;
+  height: 4px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.card {
+  background: #ebf0ee;
+  border: 1px solid #d0d9d4;
+  border-radius: 8px;
+  height: 474px;
+  width: 327px;
+  margin-left: 26px;
+  margin-bottom: 24px;
+}
+
+.card-title1,
+.card-title2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 0;
+}
+
+.card-title1 {
+  margin-bottom: 3px;
+}
+
+.card-content {
+  margin-top: 252px;
+  border-radius: 8px;
+  padding: 16px;
+  background: #fff;
+}
+
+.languages {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  font-weight: 600;
+  list-style-type: none;
+  padding: 0;
+  letter-spacing: 0.03em;
+  color: #3a4a42;
+}
+
+.language {
+  background: #ebf0ee;
+  border-radius: 4px;
+  padding: 8px 12px;
+  flex: none;
+  order: 3;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 29px;
+  margin-bottom: 15px;
+}
+
+.project-button {
+  border: none;
+  background: #36b37f;
+  border-radius: 4px;
+  width: 122px;
+  height: 48px;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: #fff;
+}
+
+.project-button:hover {
+  cursor: pointer;
+}
+
+.about-button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 59px;
+}
+
+.about-button {
+  border: none;
+  background: #36b37f;
+  border-radius: 4px;
+  width: 159px;
+  height: 48px;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: #fff;
+  margin-right: 105px;
+}
+
+.about-button:hover {
+  cursor: pointer;
+}
+
+.about-me-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-me-title {
+  margin-left: 90px;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 52px;
+  text-align: center;
+  margin-bottom: 24px;
+  color: #172b4d;
+}
+
+.about-me-image1 {
+  height: 127px;
+  width: 68px;
+}
+
+.about-me-image2 {
+  height: 57px;
+  width: 70px;
+}
+
+.about-me-description {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 32px;
+  text-align: center;
+  color: #42526e;
+  margin: 0 12px 24px;
+}
+
+.reference-icon {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  margin-left: 124px;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  background-color: #fff;
+  box-shadow: 0 16px 24px rgba(37, 47, 137, 0.08);
+  align-items: center;
+}
+
+.language-icon {
+  width: 44px;
+  height: 44px;
+}
+
+.about-card {
+  background: #ebf0ee;
+  border: 1px solid #d0d9d4;
+  border-radius: 8px;
+  height: 352px;
+  width: 327px;
+  margin-left: 26px;
+  margin-bottom: 24px;
+}
+
+.about-card-content {
+  display: flex;
+  align-items: center;
+}
+
+.aboutcard-title1 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: 0;
+  text-align: center;
+  color: #344563;
+  margin-top: 64px;
+}
+
+.languages2 {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  font-weight: 600;
+  list-style-type: none;
+  letter-spacing: 0.03em;
+  color: #36b37e;
+  padding-left: 28px;
+  padding-right: 28px;
+  order: 1;
+}
+
+.language2 {
+  background: #fff;
+  border-radius: 4px;
+  padding: 8px 12px;
+  text-align: center;
+}
+
+.frameworks {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 12px;
+  font-weight: 600;
+  list-style-type: none;
+  letter-spacing: 0.03em;
+  color: #36b37e;
+  padding-left: 0;
+  order: 1;
+}
+
+.framework {
+  background: #fff;
+  border-radius: 4px;
+  padding: 8px 12px;
+  text-align: center;
+}
+
+.skills {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 12px;
+  font-weight: 600;
+  list-style-type: none;
+  letter-spacing: 0.03em;
+  color: #36b37e;
+  padding-left: 0;
+  order: 1;
+}
+
+.skill {
+  background: #fff;
+  border-radius: 4px;
+  padding: 8px 12px;
+  text-align: center;
+}
+
+.skill2 {
+  background: #fff;
+  border-radius: 4px;
+  padding: 8px 12px;
+  text-align: center;
+}
+
+.about-interest {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 52px;
+  text-align: center;
+  margin-bottom: 24px;
+  color: #172b4d;
+  padding: 0 24px;
+  margin-top: 60px;
+}
+
+.inputs {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.input {
+  border: 1px solid #d0d9d4;
+  border-radius: 4px;
+  width: 327px;
+  font-weight: 200;
+  font-size: 15px;
+  line-height: 24px;
+  display: flex;
+  color: #6b778c;
+  margin-bottom: 24px;
+}
+
+.name {
+  height: 48px;
+}
+
+.adress {
+  height: 48px;
+}
+
+.text {
+  height: 114px;
+  border: 1px solid #60c095;
+}
+
+.touch-button-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 46px;
+}
+
+.touch-button {
+  border: none;
+  background: #36b37f;
+  border-radius: 4px;
+  width: 129px;
+  height: 48px;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: #fff;
+}
+
+.touch-button:hover {
+  cursor: pointer;
+}
+
+.mail {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+  color: #42526e;
 }
