@@ -263,7 +263,7 @@ body {
   line-height: 32px;
   text-align: center;
   color: #42526e;
-  margin: 0px 12px 24px;
+  margin: 0 12px 24px;
 }
 
 .reference-icon {
@@ -275,7 +275,7 @@ body {
   width: 80px;
   height: 80px;
   background-color: #fff;
-  box-shadow: 0px 16px 24px rgba(37, 47, 137, 0.08);
+  box-shadow: 0 16px 24px rgba(37, 47, 137, 0.08);
   align-items: center;
 }
 
