@@ -327,6 +327,51 @@ body {
   text-align: center;
 }
 
+.frameworks {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 12px;
+  font-weight: 600;
+  list-style-type: none;
+  letter-spacing: 0.03em;
+  color: #36b37e;
+  padding-left: 0px;
+  order: 1;
+}
+
+.framework {
+  background: #ffffff;
+  border-radius: 4px;
+  padding: 8px 12px;
+  text-align: center;
+}
+
+.skills {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 12px;
+  font-weight: 600;
+  list-style-type: none;
+  letter-spacing: 0.03em;
+  color: #36b37e;
+  padding-left: 0px;
+
+  order: 1;
+}
+
+.skill {
+  background: #ffffff;
+  border-radius: 4px;
+  padding: 8px 12px;
+  text-align: center;
+}
+.skill2 {
+  background: #ffffff;
+  border-radius: 4px;
+  padding: 8px 12px;
+  text-align: center;
+}
+
 .about-interest {
   font-size: 40px;
   font-weight: 700;
