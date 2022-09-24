@@ -197,10 +197,6 @@ body {
   order: 3;
 }
 
-.language:hover {
-  cursor: pointer;
-}
-
 .button-container {
   display: flex;
   justify-content: center;
@@ -208,9 +204,28 @@ body {
   margin-bottom: 15px;
 }
 
+.project-button {
+  border: none;
+  background: #36b37f;
+  border-radius: 4px;
+  width: 122px;
+  height: 48px;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: #ffffff;
+}
+
+.project-button:hover {
+  cursor: pointer;
+}
+
 .about-button-container {
   display: flex;
   justify-content: center;
+  margin-bottom: 59px;
 }
 
 .about-button {
@@ -227,7 +242,7 @@ body {
   color: #ffffff;
 }
 
-.project-button:hover {
+.about-button:hover {
   cursor: pointer;
 }
 
@@ -237,6 +252,7 @@ body {
   line-height: 52px;
   text-align: center;
   margin-bottom: 24px;
+  color: #172b4d;
 }
 
 .about-me-description {
@@ -247,4 +263,140 @@ body {
   text-align: center;
   color: #42526e;
   margin: 0px 12px 24px;
+}
+
+.reference-icon {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  margin-left: 124px;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  background-color: #ffffff;
+  box-shadow: 0px 16px 24px rgba(37, 47, 137, 0.08);
+  align-items: center;
+}
+
+.language-icon {
+  width: 44px;
+  height: 44px;
+}
+
+.about-card {
+  background: #ebf0ee;
+  border: 1px solid #d0d9d4;
+  border-radius: 8px;
+  height: 352px;
+  width: 327px;
+  margin-left: 26px;
+  margin-bottom: 24px;
+}
+.about-card-content {
+  display: flex;
+  align-items: center;
+}
+
+.aboutcard-title1 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #344563;
+  margin-top: 64px;
+}
+
+.languages2 {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  font-weight: 600;
+  list-style-type: none;
+  letter-spacing: 0.03em;
+  color: #36b37e;
+  padding-left: 28px;
+  padding-right: 28px;
+  order: 1;
+}
+
+.language2 {
+  background: #ffffff;
+  border-radius: 4px;
+  padding: 8px 12px;
+  text-align: center;
+}
+
+.about-interest {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 52px;
+  text-align: center;
+  margin-bottom: 24px;
+  color: #172b4d;
+  padding: 0px 24px;
+  margin-top: 60px;
+}
+
+.inputs {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.input {
+  border: 1px solid #d0d9d4;
+  border-radius: 4px;
+  width: 327px;
+  font-weight: 200;
+  font-size: 15px;
+  line-height: 24px;
+  display: flex;
+  color: #6b778c;
+  margin-bottom: 24px;
+}
+
+.name {
+  height: 48px;
+}
+
+.adress {
+  height: 48px;
+}
+
+.text {
+  height: 114px;
+  border: 1px solid #60c095;
+}
+
+.touch-button-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 46px;
+}
+
+.touch-button {
+  border: none;
+  background: #36b37f;
+  border-radius: 4px;
+  width: 129px;
+  height: 48px;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: #ffffff;
+}
+
+.touch-button:hover {
+  cursor: pointer;
+}
+
+.mail {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+  color: #42526e;
 }
