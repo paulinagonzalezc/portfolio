@@ -17,6 +17,7 @@ body {
 .top-part {
   align-items: center;
 }
+
 .toolbar {
   display: flex;
   justify-content: space-between;
@@ -129,6 +130,7 @@ body {
 .works-title1 {
   margin-bottom: 0;
 }
+
 .works-title2 {
   margin-top: 0;
   margin-bottom: 24px;
@@ -175,7 +177,7 @@ body {
   margin-top: 252px;
   border-radius: 8px;
   padding: 16px;
-  background: #ffffff;
+  background: #fff;
 }
 
 .languages {
@@ -215,7 +217,7 @@ body {
   line-height: 24px;
   letter-spacing: 0.03em;
   text-align: center;
-  color: #ffffff;
+  color: #fff;
 }
 
 .project-button:hover {
@@ -239,7 +241,7 @@ body {
   line-height: 24px;
   letter-spacing: 0.03em;
   text-align: center;
-  color: #ffffff;
+  color: #fff;
 }
 
 .about-button:hover {
@@ -259,7 +261,6 @@ body {
   font-size: 20px;
   font-weight: 300;
   line-height: 32px;
-  letter-spacing: 0em;
   text-align: center;
   color: #42526e;
   margin: 0px 12px 24px;
@@ -273,7 +274,7 @@ body {
   border-radius: 50%;
   width: 80px;
   height: 80px;
-  background-color: #ffffff;
+  background-color: #fff;
   box-shadow: 0px 16px 24px rgba(37, 47, 137, 0.08);
   align-items: center;
 }
@@ -292,6 +293,7 @@ body {
   margin-left: 26px;
   margin-bottom: 24px;
 }
+
 .about-card-content {
   display: flex;
   align-items: center;
@@ -301,7 +303,7 @@ body {
   font-size: 24px;
   font-weight: 600;
   line-height: 32px;
-  letter-spacing: 0em;
+  letter-spacing: 0;
   text-align: center;
   color: #344563;
   margin-top: 64px;
@@ -321,7 +323,7 @@ body {
 }
 
 .language2 {
-  background: #ffffff;
+  background: #fff;
   border-radius: 4px;
   padding: 8px 12px;
   text-align: center;
@@ -335,12 +337,12 @@ body {
   list-style-type: none;
   letter-spacing: 0.03em;
   color: #36b37e;
-  padding-left: 0px;
+  padding-left: 0;
   order: 1;
 }
 
 .framework {
-  background: #ffffff;
+  background: #fff;
   border-radius: 4px;
   padding: 8px 12px;
   text-align: center;
@@ -354,19 +356,19 @@ body {
   list-style-type: none;
   letter-spacing: 0.03em;
   color: #36b37e;
-  padding-left: 0px;
-
+  padding-left: 0;
   order: 1;
 }
 
 .skill {
-  background: #ffffff;
+  background: #fff;
   border-radius: 4px;
   padding: 8px 12px;
   text-align: center;
 }
+
 .skill2 {
-  background: #ffffff;
+  background: #fff;
   border-radius: 4px;
   padding: 8px 12px;
   text-align: center;
@@ -379,7 +381,7 @@ body {
   text-align: center;
   margin-bottom: 24px;
   color: #172b4d;
-  padding: 0px 24px;
+  padding: 0 24px;
   margin-top: 60px;
 }
 
@@ -431,7 +433,7 @@ body {
   line-height: 24px;
   letter-spacing: 0.03em;
   text-align: center;
-  color: #ffffff;
+  color: #fff;
 }
 
 .touch-button:hover {
