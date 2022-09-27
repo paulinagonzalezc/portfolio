@@ -267,17 +267,7 @@
           </h3>
         </div>
 
-        <div class="inputs">
-          <input type="text" class="input name" placeholder="Full name" />
-          <input type="text" class="input adress" placeholder="Email address" />
-          <input type="text" class="input text" placeholder="Enter text here" />
-        </div>
-
-        <div class="touch-button-container">
-          <button class="touch-button">Get in touch</button>
-        </div>
-
-        <form action="" method="POST">
+        <form action="https://formspree.io/f/xwkzojea" method="POST">
           <ul class="form-list">
             <li>
               <input
@@ -286,6 +276,8 @@
                 id="name"
                 name="name"
                 placeholder="Full name"
+                maxlength="30"
+                required
               />
             </li>
             <li>
@@ -295,17 +287,21 @@
                 id="mail"
                 name="email"
                 placeholder="Email address"
+                required
               />
             </li>
             <li>
               <textarea
                 class="message-input"
+                type="text"
                 id="message"
                 name="message"
                 placeholder="Enter text here"
+                maxlength="500"
+                required
               ></textarea>
             </li>
-            <li class="button">
+            <li class="input-button-container">
               <button class="button-input" type="submit">Get in touch</button>
             </li>
           </ul>
@@ -358,7 +354,7 @@
             </a>
           </li>
         </ul>
-        <footer class="mail">paulinagzzc@gmail.com</footer>
+        <footer class="my-mail">paulinagzzc@gmail.com</footer>
       </section>
     </div>
   </body>

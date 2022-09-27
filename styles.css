@@ -402,44 +402,63 @@ body {
   margin-top: 60px;
 }
 
-.inputs {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+.form-list {
+  list-style: none;
+  padding-left: 24px;
+  margin-bottom: 0;
 }
 
-.input {
-  border: 1px solid #d0d9d4;
-  border-radius: 4px;
-  width: 327px;
-  font-weight: 200;
-  font-size: 15px;
-  line-height: 24px;
-  display: flex;
+.name-input::placeholder,
+.email-input::placeholder {
   color: #6b778c;
+  font-weight: 400;
+  font-size: 15px;
+  font-style: normal;
+  font-family: "Inter", sans-serif;
+}
+
+.name-input {
+  width: 295px;
+  height: 18px;
+  border-radius: 4px;
+  border: 1px solid #d0d9d4;
   margin-bottom: 24px;
+  padding: 15px 16px;
 }
 
-.name {
-  height: 48px;
+.email-input {
+  width: 295px;
+  height: 18px;
+  border-radius: 4px;
+  border: 1px solid #d0d9d4;
+  margin-bottom: 24px;
+  font-style: normal;
+  padding: 15px 16px;
 }
 
-.adress {
-  height: 48px;
+.message-input::placeholder {
+  color: black;
+  font-weight: 400;
+  font-size: 15px;
+  font-style: normal;
+  font-family: "Inter", sans-serif;
 }
-
-.text {
+.message-input {
+  width: 295px;
   height: 114px;
+  border-radius: 4px;
   border: 1px solid #60c095;
+  margin-bottom: 24px;
+  padding: 15px 16px;
 }
 
-.touch-button-container {
+.input-button-container {
   display: flex;
   justify-content: center;
-  margin-bottom: 46px;
+  margin-bottom: 0;
 }
 
-.touch-button {
+.button-input {
   border: none;
   background: #36b37f;
   border-radius: 4px;
@@ -453,45 +472,11 @@ body {
   color: #fff;
 }
 
-.touch-button:hover {
-  cursor: pointer;
-}
-
-.mail {
-  font-weight: 400;
+.my-mail {
+  font-family: "Inter", sans-serif;
   font-size: 20px;
+  font-weight: 400;
   line-height: 32px;
   text-align: center;
   color: #42526e;
-}
-
-.form-list {
-  list-style: none;
-  padding-left: 24px;
-}
-
-.name-input {
-  width: 295px;
-  height: 18px;
-  border-radius: 4px;
-  border: 1px solid #d0d9d4;
-  font-weight: 200;
-  font-size: 15px;
-  color: #6b778c;
-  margin-bottom: 24px;
-  font-style: normal;
-  padding: 15px 16px;
-}
-
-.email-input {
-  width: 295px;
-  height: 18px;
-  border-radius: 4px;
-  border: 1px solid #d0d9d4;
-  font-weight: 200;
-  font-size: 15px;
-  color: #6b778c;
-  margin-bottom: 24px;
-  font-style: normal;
-  padding: 15px 16px;
 }
