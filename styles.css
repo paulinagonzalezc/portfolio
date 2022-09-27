@@ -456,6 +456,7 @@ body {
   display: flex;
   justify-content: center;
   margin-bottom: 0;
+  margin-right: 24px;
 }
 
 .button-input {
@@ -491,4 +492,27 @@ body {
   line-height: 32px;
   text-align: center;
   color: #42526e;
+  padding-left: 50px;
+}
+
+.social2 {
+  width: 20px;
+  height: 20px;
+  padding: 10px;
+}
+
+.social2:hover {
+  background-color: whitesmoke;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.social-media2 {
+  float: clear;
+  padding-top: 38px;
+  padding-left: 0;
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  margin-left: 50px;
 }
