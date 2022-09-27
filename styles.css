@@ -472,6 +472,18 @@ body {
   color: #fff;
 }
 
+.button-input:hover {
+  cursor: pointer;
+}
+
+.form-background {
+  width: 50px;
+  height: 130px;
+  float: right;
+  position: relative;
+  top: -70px;
+}
+
 .my-mail {
   font-family: "Inter", sans-serif;
   font-size: 20px;
