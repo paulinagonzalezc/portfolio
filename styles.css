@@ -13,10 +13,6 @@ body {
   background-position-y: 98px;
 }
 
-.top-part {
-  align-items: center;
-}
-
 .toolbar {
   display: flex;
   justify-content: space-between;
