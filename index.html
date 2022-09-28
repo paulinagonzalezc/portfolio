@@ -267,21 +267,55 @@
           </h3>
         </div>
 
-        <div class="inputs">
-          <input type="text" class="input name" placeholder="Full name" />
-          <input type="text" class="input adress" placeholder="Email address" />
-          <input type="text" class="input text" placeholder="Enter text here" />
-        </div>
-
-        <div class="touch-button-container">
-          <button class="touch-button">Get in touch</button>
-        </div>
-
-        <ul class="social-media">
+        <form action="https://formspree.io/f/xwkzojea" method="POST">
+          <ul class="form-list">
+            <li>
+              <input
+                class="name-input"
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Full name"
+                maxlength="30"
+                required
+              />
+            </li>
+            <li>
+              <input
+                class="email-input"
+                type="email"
+                id="mail"
+                name="email"
+                placeholder="Email address"
+                required
+              />
+            </li>
+            <li>
+              <textarea
+                class="message-input"
+                type="text"
+                id="message"
+                name="message"
+                placeholder="Enter text here"
+                maxlength="500"
+                required
+              ></textarea>
+            </li>
+            <li class="input-button-container">
+              <button class="button-input" type="submit">Get in touch</button>
+            </li>
+          </ul>
+        </form>
+        <img
+          class="form-background"
+          src="./images/illustration-contact-form.png"
+          alt="image form"
+        />
+        <ul class="social-media2">
           <li id="twitter">
             <a href="#">
               <img
-                class="social twitter"
+                class="social2 twitter"
                 src="./images/twitter.png"
                 alt="twitter"
               />
@@ -290,7 +324,7 @@
           <li id="linkedin">
             <a href="">
               <img
-                class="social linkedin"
+                class="social2 linkedin"
                 src="./images/linkedin.png"
                 alt="linkedin"
               />
@@ -299,7 +333,7 @@
           <li id="medium">
             <a href="">
               <img
-                class="social medium"
+                class="social2 medium"
                 src="./images/medium.png"
                 alt="medium"
               />
@@ -308,7 +342,7 @@
           <li id="github">
             <a href="">
               <img
-                class="social github"
+                class="social2 github"
                 src="./images/github.png"
                 alt="github"
               />
@@ -317,14 +351,17 @@
           <li id="angellist">
             <a href="#">
               <img
-                class="social angelist"
+                class="social2 angelist"
                 src="./images/angellist.png"
                 alt="angellist"
               />
             </a>
           </li>
         </ul>
-        <footer class="mail">paulinagzzc@gmail.com</footer>
+        <footer class="my-mail">paulinagzzc@gmail.com</footer>
+        <div class="bar-container">
+          <img class="low-bar" src="./images/iphone-bar.png" />
+        </div>
       </section>
     </div>
   </body>
