@@ -8,27 +8,48 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;1000&display=swap"
       rel="stylesheet"
     />
     <title>My Portfolio</title>
   </head>
   <body>
     <div class="container">
-      <header class="toolbar">
-        <a href="#" class="tool logo">Welcome</a>
+      <header class="nav-bar">
+        <a href="#" class="head logo">Welcome</a>
+        <div>
+          <img
+            id="mobile-cta"
+            class="head mobile-menu"
+            src="./images/icon-menu.png"
+            alt="menu-icon"
+          />
+        </div>
         <nav>
-          <img class="tool menu" src="./images/icon-menu.png" alt="menu-icon" />
+          <ul class="primary-nav">
+            <li>
+              <a href="#">Portfolio</a>
+            </li>
+            <li>
+              <a href="#">About</a>
+            </li>
+            <li>
+              <a href="#">Contact</a>
+            </li>
+          </ul>
         </nav>
       </header>
+
       <section class="presentation">
-        <h1 class="present title">Hey there. I'm Paulina</h1>
+        <h1 class="present title">Hey there. I'm Paulina.</h1>
         <h2 class="present second-title">I'm a software developer</h2>
-        <p class="personal-description">
-          I can help you build a product , feature or website Look through some
-          of my work and experience! If you like what you see and have a project
-          you need coded, don’t hestiate to contact me.
-        </p>
+        <div class="description-container">
+          <p class="personal-description">
+            I can help you build a product , feature or website Look through
+            some of my work and experience! If you like what you see and have a
+            project you need coded, don’t hestiate to contact me.
+          </p>
+        </div>
 
         <ul class="social-media">
           <li id="twitter">
