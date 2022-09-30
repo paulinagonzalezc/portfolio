@@ -209,17 +209,20 @@
         </div>
       </section>
 
+      <img class="resume-image-desktop1" src="./images/about-me-image1.png" />
+      <img class="resume-image-desktop2" src="./images/about-me-image2.png" />
       <div class="resume">
         <header class="resume-header">
           <h3 class="resume-title">About me</h3>
           <img class="resume-image1" src="./images/aboutme-icon1.png" />
         </header>
-
-        <p class="resume-description">
-          I can help you build a product , feature or website Look through some
-          of my work and experience! If you like what you see and have a project
-          you need coded, don’t hestiate to contact me.
-        </p>
+        <div class="resume-container">
+          <p class="resume-description">
+            I can help you build a product , feature or website Look through
+            some of my work and experience! If you like what you see and have a
+            project you need coded, don’t hestiate to contact me.
+          </p>
+        </div>
         <div class="resume-button-container">
           <img class="resume-image2" src="./images/aboutme-icon2.png" />
           <button class="resume-button">Get my Resume</button>
@@ -280,57 +283,64 @@
           </div>
         </div>
 
-        <div class="interest">
-          <h3 class="about-interest">
-            I'm always interested in hearing about new projects, so if you'd
-            like to chat please get in touch.
-          </h3>
+        <div class="interest-form">
+          <div class="interest">
+            <h3 class="about-interest">
+              I'm always interested in hearing about new projects, so if you'd
+              like to chat please get in touch.
+            </h3>
+          </div>
+
+          <form
+            class="contact-form"
+            action="https://formspree.io/f/xwkzojea"
+            method="POST"
+          >
+            <ul class="form-list">
+              <li>
+                <input
+                  class="name-input"
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Full name"
+                  maxlength="30"
+                  required
+                />
+              </li>
+              <li>
+                <input
+                  class="email-input"
+                  type="email"
+                  id="mail"
+                  name="email"
+                  placeholder="Email address"
+                  required
+                />
+              </li>
+              <li>
+                <textarea
+                  class="message-input"
+                  type="text"
+                  id="message"
+                  name="message"
+                  placeholder="Enter text here"
+                  maxlength="500"
+                  required
+                ></textarea>
+              </li>
+              <li class="input-button-container">
+                <button class="button-input" type="submit">Get in touch</button>
+              </li>
+            </ul>
+          </form>
+          <img
+            class="form-background"
+            src="./images/illustration-contact-form.png"
+            alt="image form"
+          />
         </div>
 
-        <form action="https://formspree.io/f/xwkzojea" method="POST">
-          <ul class="form-list">
-            <li>
-              <input
-                class="name-input"
-                type="text"
-                id="name"
-                name="name"
-                placeholder="Full name"
-                maxlength="30"
-                required
-              />
-            </li>
-            <li>
-              <input
-                class="email-input"
-                type="email"
-                id="mail"
-                name="email"
-                placeholder="Email address"
-                required
-              />
-            </li>
-            <li>
-              <textarea
-                class="message-input"
-                type="text"
-                id="message"
-                name="message"
-                placeholder="Enter text here"
-                maxlength="500"
-                required
-              ></textarea>
-            </li>
-            <li class="input-button-container">
-              <button class="button-input" type="submit">Get in touch</button>
-            </li>
-          </ul>
-        </form>
-        <img
-          class="form-background"
-          src="./images/illustration-contact-form.png"
-          alt="image form"
-        />
         <ul class="social-media2">
           <li id="twitter">
             <a href="#">

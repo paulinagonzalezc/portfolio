@@ -394,6 +394,11 @@ nav {
   width: 70px;
 }
 
+.resume-image-desktop1,
+.resume-image-desktop2 {
+  display: none;
+}
+
 .resume-description {
   font-size: 20px;
   font-weight: 300;
@@ -403,22 +408,98 @@ nav {
   margin: 0 12px 24px;
 }
 
+/* Resume desktop */
 @media (min-width: 768px) {
-  .resume-header {
-    display: flex;
+  .resume {
+    color: #172b4d;
+    font-family: "Inter", sans-serif;
     margin-top: 192px;
   }
 
-  .resume-title {
-    justify-self: center;
+  .resume-header {
+    display: flex;
+    justify-content: center;
   }
 
-  .resume-image1 {
+  .resume-title {
+    /* margin-left: 90px; */
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 52px;
+    text-align: center;
+    margin-bottom: 24px;
+    color: #172b4d;
+    margin-left: 0;
+  }
+
+  .resume-button-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 59px;
+  }
+
+  .resume-button {
+    border: none;
+    background: #36b37f;
+    border-radius: 4px;
+    width: 159px;
+    height: 48px;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: #fff;
+    margin-right: 0;
+    /* margin-right: 105px; */
+  }
+
+  .resume-button:hover {
+    cursor: pointer;
+  }
+
+  .resume-image-desktop1,
+  .resume-image-desktop2 {
+    display: flex;
+  }
+  .resume-image-desktop1 {
+    height: 190px;
+    width: 220px;
     float: right;
+    position: relative;
+    top: 180px;
+    left: 10px;
+  }
+
+  .resume-image-desktop2 {
+    height: 129px;
+    width: 230px;
+    float: left;
+    position: relative;
+    top: 320px;
+    left: -10px;
+  }
+
+  .resume-image1,
+  .resume-image2 {
+    display: none;
+  }
+
+  .resume-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
   }
 
   .resume-description {
+    grid-column: 2;
     margin: 24px 0 0 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    margin: 20px 24px;
+    text-align: center;
+    color: #172b4d;
   }
 }
 
@@ -538,9 +619,14 @@ nav {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     row-gap: 20px;
-    column-gap: 24px;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 90px;
+    margin-right: 90px;
+  }
+
+  .about-card {
+    justify-self: center;
+    margin: 0;
+    width: 369px;
   }
 }
 
@@ -559,7 +645,7 @@ nav {
 
 .form-list {
   list-style: none;
-  padding-left: 24px;
+  padding-left: 35px;
   margin-bottom: 0;
 }
 
@@ -574,7 +660,7 @@ nav {
 
 .name-input {
   width: 295px;
-  height: 18px;
+  height: 28px;
   border-radius: 4px;
   border: 1px solid #d0d9d4;
   margin-bottom: 24px;
@@ -583,7 +669,7 @@ nav {
 
 .email-input {
   width: 295px;
-  height: 18px;
+  height: 28px;
   border-radius: 4px;
   border: 1px solid #d0d9d4;
   margin-bottom: 24px;
@@ -639,6 +725,64 @@ nav {
   float: right;
   position: relative;
   top: -70px;
+}
+
+/* Interest and form  desktop*/
+@media (min-width: 768px) {
+  .interest-form {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: 1fr;
+    margin-left: 90px;
+    margin-right: 90px;
+    margin-top: 164px;
+    column-gap: 24px;
+  }
+
+  .interest {
+    align-self: center;
+  }
+
+  .about-interest {
+    margin-top: 0;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 52px;
+  }
+
+  .form-list {
+    padding: 0;
+  }
+
+  .name-input {
+    width: 684px;
+    height: 48px;
+  }
+
+  .email-input {
+    width: 684px;
+    height: 48px;
+  }
+
+  .message-input::placeholder {
+    color: black;
+    font-weight: 400;
+    font-size: 15px;
+  }
+
+  .message-input {
+    height: 114px;
+    width: 684px;
+  }
+
+  .input-button-container {
+    display: flex;
+    justify-content: left;
+  }
+
+  .form-background {
+    display: none;
+  }
 }
 
 .social2 {
