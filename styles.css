@@ -692,9 +692,13 @@ nav {
     font-weight: 700;
     line-height: 52px;
     text-align: center;
-    margin-bottom: 24px;
+    margin-bottom: 15px;
     color: #172b4d;
     margin-left: 0;
+  }
+
+  .resume-container {
+    margin-bottom: 20px;
   }
 
   .resume-button-container {
