@@ -224,8 +224,6 @@ nav {
   cursor: pointer;
 }
 
-/* New section */
-
 .resume-header {
   display: flex;
   justify-content: space-between;
@@ -559,6 +557,7 @@ nav {
     background-position-y: -10px;
     background-position-x: 20px;
     border: none;
+    transition: ease-in 1s;
   }
 
   .mobile-menu,
@@ -602,6 +601,20 @@ nav {
 
   .title {
     margin-top: 140px;
+    animation-duration: 2s;
+    animation-name: slidein;
+  }
+
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
   }
 
   .second-title {
@@ -644,9 +657,13 @@ nav {
 
   .work-card {
     grid-column: auto;
-    width: 369px;
+    width: 320px;
     justify-self: center;
     margin-bottom: 0;
+  }
+
+  .work-card:hover {
+    transform: scale(1.05);
   }
 
   .cards-container {
@@ -675,7 +692,7 @@ nav {
     font-weight: 700;
     line-height: 52px;
     text-align: center;
-    margin-bottom: 24px;
+    margin-bottom: 15px;
     color: #172b4d;
     margin-left: 0;
   }
@@ -703,6 +720,7 @@ nav {
 
   .resume-button:hover {
     cursor: pointer;
+    background: #008552;
   }
 
   .resume-image-desktop1,
@@ -736,6 +754,7 @@ nav {
   .resume-container {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
+    margin-bottom: 20px;
   }
 
   .resume-description {
@@ -753,15 +772,19 @@ nav {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
-    row-gap: 20px;
+    column-gap: 15px;
     margin-left: 90px;
     margin-right: 90px;
+  }
+
+  .about-card-icon {
+    margin-left: 140px;
   }
 
   .about-card {
     justify-self: center;
     margin: 0;
-    width: 369px;
+    width: 360px;
   }
 
   .interest-form {
@@ -783,6 +806,11 @@ nav {
     font-weight: 700;
     font-size: 30px;
     line-height: 52px;
+  }
+
+  .about-interest:hover {
+    transform: translate(12px);
+    transition: ease 2s;
   }
 
   .form-list {
