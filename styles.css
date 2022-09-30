@@ -224,8 +224,6 @@ nav {
   cursor: pointer;
 }
 
-/* New section */
-
 .resume-header {
   display: flex;
   justify-content: space-between;
@@ -559,6 +557,7 @@ nav {
     background-position-y: -10px;
     background-position-x: 20px;
     border: none;
+    transition: ease-in 2s;
   }
 
   .mobile-menu,
@@ -644,9 +643,13 @@ nav {
 
   .work-card {
     grid-column: auto;
-    width: 369px;
+    width: 350px;
     justify-self: center;
     margin-bottom: 0;
+  }
+
+  .work-card:hover {
+    transform: scale(1.05);
   }
 
   .cards-container {
