@@ -557,7 +557,7 @@ nav {
     background-position-y: -10px;
     background-position-x: 20px;
     border: none;
-    transition: ease-in 2s;
+    transition: ease-in 1s;
   }
 
   .mobile-menu,
@@ -643,7 +643,7 @@ nav {
 
   .work-card {
     grid-column: auto;
-    width: 350px;
+    width: 320px;
     justify-self: center;
     margin-bottom: 0;
   }
@@ -757,7 +757,7 @@ nav {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
-    row-gap: 20px;
+    column-gap: 15px;
     margin-left: 90px;
     margin-right: 90px;
   }
@@ -765,7 +765,7 @@ nav {
   .about-card {
     justify-self: center;
     margin: 0;
-    width: 369px;
+    width: 360px;
   }
 
   .interest-form {
