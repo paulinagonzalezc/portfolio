@@ -85,6 +85,7 @@ nav {
   text-align: center;
   color: #172b4d;
 }
+
 .social {
   width: 20px;
   height: 20px;
@@ -604,7 +605,7 @@ nav {
   }
 
   .second-title {
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 
   .description-container {
@@ -623,7 +624,7 @@ nav {
   }
 
   .arrow {
-    margin-top: 0px;
+    margin-top: 0;
   }
 
   .division {
@@ -708,6 +709,7 @@ nav {
   .resume-image-desktop2 {
     display: flex;
   }
+
   .resume-image-desktop1 {
     height: 190px;
     width: 220px;
@@ -738,12 +740,11 @@ nav {
 
   .resume-description {
     grid-column: 2;
-    margin: 24px 0 0 0;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 32px;
-    margin: 20px 24px;
+    margin: 10px 24px;
     text-align: center;
     color: #172b4d;
   }
