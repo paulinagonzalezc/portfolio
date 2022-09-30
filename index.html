@@ -8,27 +8,48 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;1000&display=swap"
       rel="stylesheet"
     />
     <title>My Portfolio</title>
   </head>
   <body>
     <div class="container">
-      <header class="toolbar">
-        <a href="#" class="tool logo">Welcome</a>
+      <header class="nav-bar">
+        <a href="#" class="head logo">Welcome</a>
+        <div>
+          <img
+            id="mobile-cta"
+            class="head mobile-menu"
+            src="./images/icon-menu.png"
+            alt="menu-icon"
+          />
+        </div>
         <nav>
-          <img class="tool menu" src="./images/icon-menu.png" alt="menu-icon" />
+          <ul class="primary-nav">
+            <li>
+              <a href="#">Portfolio</a>
+            </li>
+            <li>
+              <a href="#">About</a>
+            </li>
+            <li>
+              <a href="#">Contact</a>
+            </li>
+          </ul>
         </nav>
       </header>
+
       <section class="presentation">
-        <h1 class="present title">Hey there. I'm Paulina</h1>
+        <h1 class="present title">Hey there. I'm Paulina.</h1>
         <h2 class="present second-title">I'm a software developer</h2>
-        <p class="personal-description">
-          I can help you build a product , feature or website Look through some
-          of my work and experience! If you like what you see and have a project
-          you need coded, don’t hestiate to contact me.
-        </p>
+        <div class="description-container">
+          <p class="personal-description">
+            I can help you build a product , feature or website Look through
+            some of my work and experience! If you like what you see and have a
+            project you need coded, don’t hestiate to contact me.
+          </p>
+        </div>
 
         <ul class="social-media">
           <li id="twitter">
@@ -81,17 +102,16 @@
       <div class="division">
         <a href=""><img class="arrow" src="./images/arrow.png" /></a>
       </div>
-
-      <h2 class="works-title1">My Recent</h2>
-      <h2 class="works-title2">Works</h2>
-
+      <div class="work-container">
+        <h2 class="works-title">My Recent Works</h2>
+      </div>
       <section class="projects-section">
         <div class="middle-icon">
           <img class="indicator" src="./images/indicator.png" />
         </div>
 
-        <div class="cards grid-container">
-          <div class="card grid-item">
+        <div class="cards-container">
+          <div class="work-card">
             <div class="card-content">
               <h3 class="card-title1">Multi-Post Stories</h3>
               <h3 class="card-title2">Gain+Glory</h3>
@@ -107,7 +127,7 @@
             </div>
           </div>
 
-          <div class="card grid-item">
+          <div class="work-card">
             <div class="card-content">
               <h3 class="card-title1">Multi-Post Stories</h3>
               <h3 class="card-title2">Gain+Glory</h3>
@@ -123,7 +143,7 @@
             </div>
           </div>
 
-          <div class="card grid-item">
+          <div class="work-card">
             <div class="card-content">
               <h3 class="card-title1">Multi-Post Stories</h3>
               <h3 class="card-title2">Gain+Glory</h3>
@@ -139,7 +159,7 @@
             </div>
           </div>
 
-          <div class="card grid-item">
+          <div class="work-card">
             <div class="card-content">
               <h3 class="card-title1">Multi-Post Stories</h3>
               <h3 class="card-title2">Gain+Glory</h3>
@@ -155,7 +175,7 @@
             </div>
           </div>
 
-          <div class="card grid-item">
+          <div class="work-card">
             <div class="card-content">
               <h3 class="card-title1">Multi-Post Stories</h3>
               <h3 class="card-title2">Gain+Glory</h3>
@@ -171,7 +191,7 @@
             </div>
           </div>
 
-          <div class="card grid-item">
+          <div class="work-card">
             <div class="card-content">
               <h3 class="card-title1">Multi-Post Stories</h3>
               <h3 class="card-title2">Gain+Glory</h3>
@@ -189,20 +209,23 @@
         </div>
       </section>
 
-      <div class="about-me">
-        <header class="about-me-header">
-          <h3 class="about-me-title">About me</h3>
-          <img class="about-me-image1" src="./images/aboutme-icon1.png" />
+      <img class="resume-image-desktop1" src="./images/about-me-image1.png" />
+      <img class="resume-image-desktop2" src="./images/about-me-image2.png" />
+      <div class="resume">
+        <header class="resume-header">
+          <h3 class="resume-title">About me</h3>
+          <img class="resume-image1" src="./images/aboutme-icon1.png" />
         </header>
-
-        <p class="about-me-description">
-          I can help you build a product , feature or website Look through some
-          of my work and experience! If you like what you see and have a project
-          you need coded, don’t hestiate to contact me.
-        </p>
-        <div class="about-button-container">
-          <img class="about-me-image2" src="./images/aboutme-icon2.png" />
-          <button class="about-button">Get my Resume</button>
+        <div class="resume-container">
+          <p class="resume-description">
+            I can help you build a product , feature or website Look through
+            some of my work and experience! If you like what you see and have a
+            project you need coded, don’t hestiate to contact me.
+          </p>
+        </div>
+        <div class="resume-button-container">
+          <img class="resume-image2" src="./images/aboutme-icon2.png" />
+          <button class="resume-button">Get my Resume</button>
         </div>
       </div>
 
@@ -210,10 +233,10 @@
         <div class="aboutme-cards">
           <div class="about-card">
             <div class="aboutcard-content">
-              <div class="reference-icon">
+              <div class="about-card-icon">
                 <img class="language-icon" src="./images/icon-languages.png" />
               </div>
-              <h3 class="aboutcard-title1">Languages</h3>
+              <h3 class="about-card-title">Languages</h3>
               <ul class="languages2">
                 <li class="language2">JavaScript</li>
                 <li class="language2">Ruby</li>
@@ -225,10 +248,10 @@
 
           <div class="about-card">
             <div class="aboutcard-content">
-              <div class="reference-icon">
+              <div class="about-card-icon">
                 <img class="language-icon" src="./images/frameworks.png" />
               </div>
-              <h3 class="aboutcard-title1">Frameworks</h3>
+              <h3 class="about-card-title">Frameworks</h3>
               <ul class="languages2">
                 <li class="language2">Bootstrap</li>
                 <li class="language2">Ruby on rails</li>
@@ -243,10 +266,10 @@
 
           <div class="about-card">
             <div class="aboutcard-content">
-              <div class="reference-icon">
+              <div class="about-card-icon">
                 <img class="language-icon" src="./images/skills.png" />
               </div>
-              <h3 class="aboutcard-title1">Skills</h3>
+              <h3 class="about-card-title">Skills</h3>
               <ul class="skills">
                 <li class="skill">Codekit</li>
                 <li class="skill">GitHub</li>
@@ -260,57 +283,79 @@
           </div>
         </div>
 
-        <div class="interest">
-          <h3 class="about-interest">
-            I'm always interested in hearing about new projects, so if you'd
-            like to chat please get in touch.
-          </h3>
-        </div>
+        <div class="interest-form">
+          <div class="interest">
+            <h3 class="about-interest">
+              I'm always interested in hearing about new projects, so if you'd
+              like to chat please get in touch.
+            </h3>
+          </div>
 
-        <form action="https://formspree.io/f/xwkzojea" method="POST">
-          <ul class="form-list">
-            <li>
-              <input
-                class="name-input"
-                type="text"
-                id="name"
-                name="name"
-                placeholder="Full name"
-                maxlength="30"
-                required
-              />
-            </li>
-            <li>
-              <input
-                class="email-input"
-                type="email"
-                id="mail"
-                name="email"
-                placeholder="Email address"
-                required
-              />
-            </li>
-            <li>
-              <textarea
-                class="message-input"
-                type="text"
-                id="message"
-                name="message"
-                placeholder="Enter text here"
-                maxlength="500"
-                required
-              ></textarea>
-            </li>
-            <li class="input-button-container">
-              <button class="button-input" type="submit">Get in touch</button>
-            </li>
-          </ul>
-        </form>
+          <form
+            class="contact-form"
+            action="https://formspree.io/f/xwkzojea"
+            method="POST"
+          >
+            <ul class="form-list">
+              <li>
+                <input
+                  class="name-input"
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Full name"
+                  maxlength="30"
+                  required
+                />
+              </li>
+              <li>
+                <input
+                  class="email-input"
+                  type="email"
+                  id="mail"
+                  name="email"
+                  placeholder="Email address"
+                  required
+                />
+              </li>
+              <li>
+                <textarea
+                  class="message-input"
+                  type="text"
+                  id="message"
+                  name="message"
+                  placeholder="Enter text here"
+                  maxlength="500"
+                  required
+                ></textarea>
+              </li>
+              <li class="input-button-container">
+                <button class="button-input" type="submit">Get in touch</button>
+              </li>
+            </ul>
+          </form>
+          <img
+            class="form-background"
+            src="./images/illustration-contact-form.png"
+            alt="image form"
+          />
+        </div>
         <img
-          class="form-background"
-          src="./images/illustration-contact-form.png"
-          alt="image form"
+          class="footer-background1"
+          src="./images/footer-background1.png"
+          alt="footer-background"
         />
+        <img
+          class="footer-background2"
+          src="./images/footer-background2.png"
+          alt="footer-background"
+        />
+        <img
+          class="footer-background3"
+          src="./images/footer-background3.png"
+          alt="footer-background"
+        />
+
         <ul class="social-media2">
           <li id="twitter">
             <a href="#">
@@ -358,6 +403,13 @@
             </a>
           </li>
         </ul>
+        <div class="rectangle-container">
+          <img
+            class="rectangle"
+            src="./images/Rectangle.png"
+            alt="footer-line"
+          />
+        </div>
         <footer class="my-mail">paulinagzzc@gmail.com</footer>
         <div class="bar-container">
           <img class="low-bar" src="./images/iphone-bar.png" />
