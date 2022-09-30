@@ -764,12 +764,6 @@ nav {
     height: 48px;
   }
 
-  .message-input::placeholder {
-    color: black;
-    font-weight: 400;
-    font-size: 15px;
-  }
-
   .message-input {
     height: 114px;
     width: 684px;
@@ -783,6 +777,20 @@ nav {
   .form-background {
     display: none;
   }
+}
+
+.footer-background1,
+.footer-background2,
+.footer-background3 {
+  display: none;
+}
+
+.free-space {
+  display: none;
+}
+
+.rectangle-container {
+  display: none;
 }
 
 .social2 {
@@ -828,4 +836,68 @@ nav {
   height: 5px;
   width: 134px;
   border-radius: 10px;
+}
+
+@media (min-width: 768px) {
+  .footer-background1,
+  .footer-background2,
+  .footer-background3 {
+    display: flex;
+  }
+
+  .footer-background1 {
+    height: 470px;
+    width: 200px;
+    float: right;
+    position: relative;
+    top: -300px;
+    left: 10px;
+  }
+
+  .footer-background2 {
+    height: 370px;
+    width: 220px;
+    float: left;
+    position: relative;
+    top: -150px;
+    left: -10px;
+  }
+
+  .footer-background3 {
+    height: 105px;
+    width: 130px;
+    float: left;
+    position: relative;
+    top: 40px;
+    left: 60px;
+  }
+
+  .free-space {
+    display: flex;
+    height: 300px;
+  }
+
+  .rectangle-container {
+    margin-top: 20px;
+    display: flex;
+  }
+
+  .rectangle {
+    background: #dfe1e6;
+    height: 1px;
+    width: 100%;
+  }
+
+  .my-mail {
+    display: none;
+  }
+
+  .bar-container {
+    display: none;
+  }
+
+  .social-media2 {
+    margin: 0;
+    padding-top: 27px;
+  }
 }
