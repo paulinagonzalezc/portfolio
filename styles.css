@@ -706,6 +706,7 @@ nav {
 
   .resume-button:hover {
     cursor: pointer;
+    background: #008552;
   }
 
   .resume-image-desktop1,
