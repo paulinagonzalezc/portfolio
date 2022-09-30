@@ -601,6 +601,20 @@ nav {
 
   .title {
     margin-top: 140px;
+    animation-duration: 2s;
+    animation-name: slidein;
+  }
+
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
   }
 
   .second-title {
@@ -760,6 +774,10 @@ nav {
     column-gap: 15px;
     margin-left: 90px;
     margin-right: 90px;
+  }
+
+  .about-card-icon {
+    margin-left: 140px;
   }
 
   .about-card {
