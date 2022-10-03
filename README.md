@@ -11,6 +11,10 @@
 ## Live Demo
 https://paulinagonzalezc.github.io/portfolio/
 
+## Live Demo
+
+[Portfolio Live Demo](https://paulinagonzalezc.github.io/portfolio/)
+
 ## Getting Started
 
 More instructions comming soon.
