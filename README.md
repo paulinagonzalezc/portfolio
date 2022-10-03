@@ -8,6 +8,10 @@
 - CSS
   So far..
 
+## Live Demo
+
+[Portfolio Live Demo](https://paulinagonzalezc.github.io/portfolio/)
+
 ## Getting Started
 
 More instructions comming soon.
