@@ -7,6 +7,9 @@
 - HTML
 - CSS
   So far..
+  
+## Live Demo
+https://paulinagonzalezc.github.io/portfolio/
 
 ## Getting Started
 
