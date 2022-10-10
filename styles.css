@@ -54,9 +54,10 @@ nav.menu-btn {
 }
 
 nav {
+  display: none;
   position: fixed;
   z-index: 999;
-  width: 100%;
+  width: 100vh;
   height: 755px;
   background: #fff;
 }
@@ -84,8 +85,8 @@ nav {
   width: 20px;
   cursor: pointer;
   position: relative;
-  left: 320px;
-  top: 20px;
+  left: 335px;
+  top: 15px;
   padding: 14px;
 }
 
