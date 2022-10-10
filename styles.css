@@ -49,9 +49,9 @@ body {
   border-radius: 10px;
 }
 
-/* nav {
-  display: none;
-} */
+nav.menu-btn {
+  display: block;
+}
 
 nav {
   position: fixed;
