@@ -187,6 +187,152 @@ nav {
   height: 4px;
 }
 
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  z-index: 10;
+  background-color: #fff;
+  border-radius: 16px;
+}
+
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+#overlay {
+  position: fixed;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(8px);
+  pointer-events: none;
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.project-modal {
+  height: auto;
+  width: 311px;
+  border: 1px solid #dfe1e6;
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 16px;
+}
+
+.close-project {
+  height: 14px;
+  width: 14px;
+  position: relative;
+  float: right;
+  right: 20px;
+  top: 34px;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.popup-image {
+  position: relative;
+  display: flex;
+  width: 311px;
+  height: 220px;
+  z-index: 1;
+}
+
+.popup-title {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172b4d;
+}
+
+.project-languages {
+  display: flex;
+  font-size: 12px;
+  font-weight: 600;
+  list-style-type: none;
+  padding: 0;
+  letter-spacing: 0.03em;
+  color: #3a4a42;
+  gap: 10px;
+}
+
+.project-language {
+  background: #ebf0ee;
+  border-radius: 4px;
+  padding: 8px 12px;
+  flex: none;
+  order: 3;
+}
+
+.popup-description {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.see-live,
+.see-source {
+  display: flex;
+  background: #36b37f;
+  border-radius: 4px;
+  border: none;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #fff;
+  height: 48px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+/* .see-live-span {
+  position: relative;
+  top: 3px;
+  left: 2px;
+} */
+
+.see-live {
+  width: 141px;
+}
+
+.see-source {
+  width: 158px;
+}
+
+.seelive-icon,
+.github-whiteicon {
+  height: 22px;
+  width: 22px;
+  position: relative;
+  top: 2.5px;
+  left: 3px;
+}
+
 .cards-container {
   display: grid;
   grid-template-columns: auto 327px auto;
