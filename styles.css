@@ -1181,6 +1181,7 @@ nav {
     line-height: 32px;
     text-align: right;
     color: red;
+    text-decoration: underline;
     padding: 5px;
     position: relative;
     left: 305px;
