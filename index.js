@@ -1,4 +1,3 @@
-// Menu popup
 const mobileBtn = document.getElementById('mobile-cta');
 const nav = document.querySelector('nav');
 const mobileBtnExit = document.getElementById('mobile-exit');
@@ -6,6 +5,9 @@ const portfolioBtn = document.getElementById('menu-portfolio');
 const aboutBtn = document.getElementById('menu-about');
 const contactBtn = document.getElementById('menu-contact');
 const projectHolder = document.querySelector('.cards-container');
+const email = document.getElementById('mail');
+const form = document.getElementById('form');
+const errorElement = document.getElementById('error');
 
 const projects = [
   {
@@ -218,3 +220,19 @@ openModalButtons.forEach((button) => {
 });
 
 setCloseModal();
+
+form.addEventListener('submit', (e) => {
+  let message = '';
+
+  function isLowerCase(input) {
+    if ((input === String(input).toLowerCase()) === false) {
+      message = '❗️ Please write your email in lowercase';
+    }
+  }
+  isLowerCase(email.value);
+
+  if (message.length > 0) {
+    e.preventDefault();
+    errorElement.innerText = message;
+  }
+});
