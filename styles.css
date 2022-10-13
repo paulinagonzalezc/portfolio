@@ -310,12 +310,6 @@ nav {
   margin: 0;
 }
 
-/* .see-live-span {
-  position: relative;
-  top: 3px;
-  left: 2px;
-} */
-
 .see-live {
   width: 141px;
 }
@@ -742,7 +736,8 @@ nav {
     background-position-y: -10px;
     background-position-x: 20px;
     border: none;
-    transition: ease-in 1s;
+
+    /* transition: ease-in 1s; */
   }
 
   .mobile-menu,
@@ -794,8 +789,9 @@ nav {
 
   .title {
     margin-top: 140px;
-    animation-duration: 2s;
-    animation-name: slidein;
+
+    /* animation-duration: 2s;
+    animation-name: slidein; */
   }
 
   @keyframes slidein {
@@ -846,6 +842,132 @@ nav {
 
   .middle-icon {
     display: none;
+  }
+
+  .modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    z-index: 10;
+    background-color: #fff;
+    border-radius: 8px;
+  }
+
+  .modal.active {
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  #overlay {
+    position: fixed;
+    opacity: 0;
+    transition: 200ms ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(8px);
+    pointer-events: none;
+  }
+
+  #overlay.active {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  .project-modal {
+    height: auto;
+    width: 920px;
+    border-radius: 8px;
+    padding-top: 0;
+  }
+
+  .close-project {
+    display: flex;
+    height: 12px;
+    width: 12px;
+    padding: 14px;
+    cursor: pointer;
+    background: #ebecf0;
+    border-radius: 8px;
+  }
+
+  .popup-image {
+    width: 872px;
+    height: 616px;
+    padding-top: 45px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .popup-title {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+    color: #172b4d;
+    padding-left: 26px;
+  }
+
+  .project-languages {
+    padding-left: 24px;
+  }
+
+  .popup-description {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #344563;
+    padding-left: 24px;
+  }
+
+  .buttons-container {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    top: -280px;
+  }
+
+  .see-live,
+  .see-source {
+    display: flex;
+    background: #36b37f;
+    border-radius: 4px;
+    border: none;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: #fff;
+    height: 48px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    margin-right: 20px;
+    text-decoration: none;
+  }
+
+  .see-live {
+    width: 141px;
+  }
+
+  .see-source {
+    width: 158px;
+  }
+
+  .seelive-icon,
+  .github-whiteicon {
+    height: 22px;
+    width: 22px;
+    position: relative;
+    top: 2.5px;
+    left: 3px;
   }
 
   .work-card {

@@ -173,20 +173,20 @@ openModalButtons.forEach((button) => {
               ${project.description}
             </p>
             <div class="buttons-container">
-            <button id="see-live" class="see-live">
+            <a id="see-live" class="see-live" href="${project.live}">
               <span>See Live</span>
               <span class="see-live-span"
                 ><img src="./images/seelive-icon.png" class="seelive-icon"
               /></span>
-            </button>
-            <button id="see-source" class="see-source">
+            </a>
+            <a id="see-source" class="see-source" href="${project.source}">
               See Source 
               <span
                 ><img
                   src="./images/github-whiteicon.png"
                   class="github-whiteicon"
               /></span>
-            </button>
+            </a>
             </div>
           </div>
     `;
