@@ -1,115 +1,112 @@
 // Menu popup
-const mobileBtn = document.getElementById("mobile-cta");
-const nav = document.querySelector("nav");
-const mobileBtnExit = document.getElementById("mobile-exit");
-const portfolioBtn = document.getElementById("menu-portfolio");
-const aboutBtn = document.getElementById("menu-about");
-const contactBtn = document.getElementById("menu-contact");
-const projectHolder = document.querySelector(".cards-container");
+const mobileBtn = document.getElementById('mobile-cta');
+const nav = document.querySelector('nav');
+const mobileBtnExit = document.getElementById('mobile-exit');
+const portfolioBtn = document.getElementById('menu-portfolio');
+const aboutBtn = document.getElementById('menu-about');
+const contactBtn = document.getElementById('menu-contact');
+const projectHolder = document.querySelector('.cards-container');
 
 const projects = [
   {
     index: 0,
-    name: "Multi-Post Stories0",
-    title: "Gain+Glory",
+    name: 'Multi-Post Stories0',
+    title: 'Gain+Glory',
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    image: "./images/popup-image.png",
-    technologies: ["ruby on rails", "css", "JavScript", "html"],
-    live: "https://paulinagonzalezc.github.io/portfolio/",
-    source: "https://github.com/paulinagonzalezc/portfolio",
+    image: './images/popup-image.png',
+    technologies: ['ruby on rails', 'css', 'JavScript', 'html'],
+    live: 'https://paulinagonzalezc.github.io/portfolio/',
+    source: 'https://github.com/paulinagonzalezc/portfolio',
   },
   {
     index: 1,
-    name: "Multi-Post Stories1",
-    title: "Gain+Glory",
+    name: 'Multi-Post Stories1',
+    title: 'Gain+Glory',
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    image: "./images/popup-image.png",
-    technologies: ["ruby on rails", "css", "JavScript", "html"],
-    live: "https://paulinagonzalezc.github.io/portfolio/",
-    source: "https://github.com/paulinagonzalezc/portfolio",
+    image: './images/popup-image.png',
+    technologies: ['ruby on rails', 'css', 'JavScript', 'html'],
+    live: 'https://paulinagonzalezc.github.io/portfolio/',
+    source: 'https://github.com/paulinagonzalezc/portfolio',
   },
   {
     index: 2,
-    name: "Multi-Post Stories",
-    title: "Gain+Glory",
+    name: 'Multi-Post Stories',
+    title: 'Gain+Glory',
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    image: "./images/popup-image.png",
-    technologies: ["ruby on rails", "css", "JavScript", "html"],
-    live: "https://paulinagonzalezc.github.io/portfolio/",
-    source: "https://github.com/paulinagonzalezc/portfolio",
+    image: './images/popup-image.png',
+    technologies: ['ruby on rails', 'css', 'JavScript', 'html'],
+    live: 'https://paulinagonzalezc.github.io/portfolio/',
+    source: 'https://github.com/paulinagonzalezc/portfolio',
   },
   {
     index: 3,
-    name: "Multi-Post Stories",
-    title: "Gain+Glory",
+    name: 'Multi-Post Stories',
+    title: 'Gain+Glory',
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    image: "./images/popup-image.png",
-    technologies: ["ruby on rails", "css", "JavScript", "html"],
-    live: "https://paulinagonzalezc.github.io/portfolio/",
-    source: "https://github.com/paulinagonzalezc/portfolio",
+    image: './images/popup-image.png',
+    technologies: ['ruby on rails', 'css', 'JavScript', 'html'],
+    live: 'https://paulinagonzalezc.github.io/portfolio/',
+    source: 'https://github.com/paulinagonzalezc/portfolio',
   },
   {
     index: 4,
-    name: "Multi-Post Stories",
-    title: "Gain+Glory",
+    name: 'Multi-Post Stories',
+    title: 'Gain+Glory',
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    image: "./images/popup-image.png",
-    technologies: ["ruby on rails", "css", "JavScript", "html"],
-    live: "https://paulinagonzalezc.github.io/portfolio/",
-    source: "https://github.com/paulinagonzalezc/portfolio",
+    image: './images/popup-image.png',
+    technologies: ['ruby on rails', 'css', 'JavScript', 'html'],
+    live: 'https://paulinagonzalezc.github.io/portfolio/',
+    source: 'https://github.com/paulinagonzalezc/portfolio',
   },
   {
     index: 5,
-    name: "Multi-Post Stories",
-    title: "Gain+Glory",
+    name: 'Multi-Post Stories',
+    title: 'Gain+Glory',
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    image: "./images/popup-image.png",
-    technologies: ["ruby on rails", "css", "JavScript", "html"],
-    live: "https://paulinagonzalezc.github.io/portfolio/",
-    source: "https://github.com/paulinagonzalezc/portfolio",
+    image: './images/popup-image.png',
+    technologies: ['ruby on rails', 'css', 'JavScript', 'html'],
+    live: 'https://paulinagonzalezc.github.io/portfolio/',
+    source: 'https://github.com/paulinagonzalezc/portfolio',
   },
 ];
 
-mobileBtn.addEventListener("click", () => {
-  nav.classList.add("menu-btn");
+mobileBtn.addEventListener('click', () => {
+  nav.classList.add('menu-btn');
 });
 
-mobileBtnExit.addEventListener("click", () => {
-  nav.classList.remove("menu-btn");
+mobileBtnExit.addEventListener('click', () => {
+  nav.classList.remove('menu-btn');
 });
 
-portfolioBtn.addEventListener("click", () => {
-  nav.classList.remove("menu-btn");
+portfolioBtn.addEventListener('click', () => {
+  nav.classList.remove('menu-btn');
 });
 
-aboutBtn.addEventListener("click", () => {
-  nav.classList.remove("menu-btn");
+aboutBtn.addEventListener('click', () => {
+  nav.classList.remove('menu-btn');
 });
 
-contactBtn.addEventListener("click", () => {
-  nav.classList.remove("menu-btn");
+contactBtn.addEventListener('click', () => {
+  nav.classList.remove('menu-btn');
 });
 
-//Work cards HTML
 const createCard = (project) => {
-  console.log(projectHolder.innerHTML);
-
-  let ul = document.createElement("ul");
-  ul.className = "languages";
-  let liList = "";
-  for (let i = 0; i < project.technologies.length; i++) {
+  const ul = document.createElement('ul');
+  ul.className = 'languages';
+  let liList = '';
+  for (let i = 0; i < project.technologies.length; i += 1) {
     liList += `<li class="language">${project.technologies[i]}</li>`;
   }
 
   ul.innerHTML = liList;
 
-  var tmp = document.createElement("div");
+  const tmp = document.createElement('div');
   tmp.appendChild(ul);
   const ulStirng = tmp.innerHTML;
   const card = `
@@ -128,95 +125,96 @@ const createCard = (project) => {
 };
 
 const populatePage = (arr) => {
-  for (let i = 0; i < arr.length; i++) {
+  for (let i = 0; i < arr.length; i += 1) {
     createCard(arr[i]);
   }
 };
 
 populatePage(projects);
 
-//Work-cards popup
-
-const openModalButtons = document.querySelectorAll("[data-modal-target]");
-const closeModalButtons = document.querySelectorAll("[data-close-button]");
-const overlay = document.getElementById("overlay");
-
-openModalButtons.forEach((button) => {
-  button.addEventListener("click", (event) => {
-    const modal = document.querySelector(button.dataset.modalTarget);
-    console.log(event.target.id);
-    const id = event.target.id.split("-")[2];
-    const project = projects[id];
-    console.log(project);
-    modal.innerHTML = "";
-
-    html = `
-      <div class="project-modal">
-            <img
-              id="close-project"
-              class="close-project"
-              src="./images/close-project.png"
-              alt="close-project"
-              data-close-button
-            />
-            <img
-              id="project-image"
-              class="popup-image"
-              src="${project.image}"
-              alt="project-image"
-            />
-            <h2 class="popup-title">${project.name}</h2>
-            <ul class="project-languages">
-              
-            </ul>
-            <p class="popup-description">
-              ${project.description}
-            </p>
-            <div class="buttons-container">
-            <a id="see-live" class="see-live" href="${project.live}">
-              <span>See Live</span>
-              <span class="see-live-span"
-                ><img src="./images/seelive-icon.png" class="seelive-icon"
-              /></span>
-            </a>
-            <a id="see-source" class="see-source" href="${project.source}">
-              See Source 
-              <span
-                ><img
-                  src="./images/github-whiteicon.png"
-                  class="github-whiteicon"
-              /></span>
-            </a>
-            </div>
-          </div>
-    `;
-    modal.innerHTML += html;
-
-    let ul = document.querySelector(".project-languages");
-    ul.innerHTML = "";
-    for (let i = 0; i < project.technologies.length; i++) {
-      ul.innerHTML += `<li class="project-language">${project.technologies[i]}</li>`;
-    }
-    openModal(modal);
-  });
-});
-
-closeModalButtons.forEach((button) => {
-  button.addEventListener("click", (event) => {
-    const modal = button.closest(".modal");
-    closeModal(modal);
-  });
-});
+const openModalButtons = document.querySelectorAll('[data-modal-target]');
+let closeModalButtons = document.querySelectorAll('[data-close-button]');
+const overlay = document.getElementById('overlay');
 
 function openModal(modal) {
   if (modal == null) return;
-  modal.classList.add("active");
-
-  overlay.classList.add("active");
+  modal.classList.add('active');
+  overlay.classList.add('active');
 }
 
 function closeModal(modal) {
   if (modal == null) return;
-  modal.classList.remove("active");
-  overlay.classList.remove("active");
+  modal.classList.remove('active');
+  overlay.classList.remove('active');
 }
+
+function setCloseModal() {
+  closeModalButtons.forEach((button) => {
+    button.addEventListener('click', () => {
+      const modal = button.closest('.modal');
+      closeModal(modal);
+    });
+  });
+}
+
+openModalButtons.forEach((button) => {
+  button.addEventListener('click', (event) => {
+    const modal = document.querySelector(button.dataset.modalTarget);
+    const id = event.target.id.split('-')[2];
+    const project = projects[id];
+    modal.innerHTML = '';
+
+    const html = `
+    <div class="project-modal">
+      <img
+     id="close-project"
+      class="close-project"
+      src="./images/close-project.png"
+      alt="close-project"
+      data-close-button
+    />
+    <img
+      id="project-image"
+      class="popup-image"
+      src="${project.image}"
+      alt="project-image"
+    />
+    <h2 class="popup-title">${project.name}</h2>
+    <ul class="project-languages">
+    
+    </ul>
+    <p class="popup-description">
+    ${project.description}
+    </p>
+    <div class="buttons-container">
+    <a id="see-live" class="see-live" href="${project.live}">
+    <span>See Live</span>
+    <span class="see-live-span"
+    ><img src="./images/seelive-icon.png" class="seelive-icon"
+    /></span>
+    </a>
+    <a id="see-source" class="see-source" href="${project.source}">
+    See Source 
+    <span
+    ><img
+    src="./images/github-whiteicon.png"
+    class="github-whiteicon"
+    /></span>
+    </a>
+    </div>
+    </div>
+    `;
+    modal.innerHTML += html;
+    closeModalButtons = document.querySelectorAll('[data-close-button]');
+
+    const ul = document.querySelector('.project-languages');
+    ul.innerHTML = '';
+    for (let i = 0; i < project.technologies.length; i += 1) {
+      ul.innerHTML += `<li class="project-language">${project.technologies[i]}</li>`;
+    }
+    openModal(modal);
+    setCloseModal();
+  });
+});
+
+setCloseModal();
