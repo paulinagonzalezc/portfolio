@@ -118,8 +118,8 @@ nav {
 .personal-description {
   font-style: normal;
   font-weight: 300;
-  font-size: 20px;
-  line-height: 28px;
+  font-size: 15px;
+  line-height: 25px;
   margin: 20px 24px;
   text-align: center;
   color: #172b4d;
@@ -185,6 +185,148 @@ nav {
 .indicator {
   width: 48px;
   height: 4px;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  z-index: 10;
+  background-color: #fff;
+  border-radius: 16px;
+}
+
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+#overlay {
+  position: fixed;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(8px);
+  pointer-events: none;
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.project-modal {
+  height: auto;
+  width: 300px;
+  border: 1px solid #dfe1e6;
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 16px;
+}
+
+.close-project {
+  height: 14px;
+  width: 14px;
+  position: relative;
+  float: right;
+  right: 20px;
+  top: 31px;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.popup-image {
+  position: relative;
+  display: flex;
+  width: 300px;
+  height: 190px;
+  z-index: 1;
+}
+
+.popup-title {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 44px;
+  color: #172b4d;
+  margin-bottom: 15px;
+}
+
+.project-languages {
+  display: flex;
+  font-size: 10px;
+  font-weight: 600;
+  list-style-type: none;
+  padding: 0;
+  letter-spacing: 0.03em;
+  color: #3a4a42;
+  gap: 10px;
+}
+
+.project-language {
+  background: #ebf0ee;
+  border-radius: 4px;
+  padding: 8px 12px;
+  flex: none;
+  order: 3;
+}
+
+.popup-description {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: #344563;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.see-live,
+.see-source {
+  display: flex;
+  background: #36b37f;
+  border-radius: 4px;
+  border: none;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.03em;
+  color: #fff;
+  height: 38px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  text-decoration: none;
+}
+
+.see-live {
+  width: 125px;
+}
+
+.see-source {
+  width: 150px;
+}
+
+.seelive-icon,
+.github-whiteicon {
+  height: 22px;
+  width: 22px;
+  position: relative;
+  top: 2.5px;
+  left: 3px;
 }
 
 .cards-container {
@@ -596,7 +738,8 @@ nav {
     background-position-y: -10px;
     background-position-x: 20px;
     border: none;
-    transition: ease-in 1s;
+
+    /* transition: ease-in 1s; */
   }
 
   .mobile-menu,
@@ -648,8 +791,9 @@ nav {
 
   .title {
     margin-top: 140px;
-    animation-duration: 2s;
-    animation-name: slidein;
+
+    /* animation-duration: 2s;
+    animation-name: slidein; */
   }
 
   @keyframes slidein {
@@ -702,9 +846,145 @@ nav {
     display: none;
   }
 
+  .modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    z-index: 10;
+    background-color: #fff;
+    border-radius: 8px;
+  }
+
+  .modal.active {
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  #overlay {
+    position: fixed;
+    opacity: 0;
+    transition: 200ms ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(8px);
+    pointer-events: none;
+  }
+
+  #overlay.active {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  .project-modal {
+    height: 570px;
+    width: 500px;
+    border-radius: 8px;
+    padding-top: 0;
+  }
+
+  .close-project {
+    display: flex;
+    height: 8px;
+    width: 8px;
+    padding: 8px;
+    top: 12px;
+    right: 10px;
+    cursor: pointer;
+    background: #ebecf0;
+    border-radius: 8px;
+  }
+
+  .popup-image {
+    width: 480px;
+    height: 320px;
+    padding-top: 18px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .popup-title {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 44px;
+    color: #172b4d;
+    padding-left: 26px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+
+  .project-languages {
+    padding-left: 24px;
+    display: flex;
+    font-size: 9px;
+    font-weight: 600;
+    list-style-type: none;
+    letter-spacing: 0.03em;
+    color: #3a4a42;
+    gap: 10px;
+  }
+
+  .popup-description {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 20px;
+    color: #344563;
+    padding-left: 24px;
+  }
+
+  .buttons-container {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    top: -195px;
+  }
+
+  .see-live,
+  .see-source {
+    display: flex;
+    background: #36b37f;
+    border-radius: 4px;
+    border: none;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: #fff;
+    height: 32px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    margin-right: 10px;
+    text-decoration: none;
+  }
+
+  .see-live {
+    width: 100px;
+  }
+
+  .see-source {
+    width: 120px;
+  }
+
+  .seelive-icon,
+  .github-whiteicon {
+    height: 17px;
+    width: 17px;
+    position: relative;
+    top: 2.5px;
+    left: 3px;
+  }
+
   .work-card {
     grid-column: auto;
-    width: 320px;
     justify-self: center;
     margin-bottom: 0;
   }
@@ -719,8 +999,6 @@ nav {
     grid-template-rows: 1fr 1fr;
     column-gap: 24px;
     row-gap: 20px;
-    margin-left: 90px;
-    margin-right: 90px;
   }
 
   .resume {
@@ -819,9 +1097,7 @@ nav {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
-    column-gap: 15px;
-    margin-left: 90px;
-    margin-right: 90px;
+    column-gap: 20px;
   }
 
   .about-card-icon {
@@ -838,10 +1114,9 @@ nav {
     display: grid;
     grid-template-columns: 2fr 3fr;
     grid-template-rows: 1fr;
-    margin-left: 90px;
-    margin-right: 90px;
     margin-top: 164px;
     column-gap: 24px;
+    z-index: 999;
   }
 
   .interest {
@@ -865,18 +1140,18 @@ nav {
   }
 
   .name-input {
-    width: 684px;
+    width: 80%;
     height: 48px;
   }
 
   .email-input {
-    width: 684px;
+    width: 80%;
     height: 48px;
   }
 
   .message-input {
+    width: 80%;
     height: 114px;
-    width: 684px;
   }
 
   .input-button-container {
