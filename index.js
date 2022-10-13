@@ -1,115 +1,114 @@
-// Menu popup
-const mobileBtn = document.getElementById("mobile-cta");
-const nav = document.querySelector("nav");
-const mobileBtnExit = document.getElementById("mobile-exit");
-const portfolioBtn = document.getElementById("menu-portfolio");
-const aboutBtn = document.getElementById("menu-about");
-const contactBtn = document.getElementById("menu-contact");
-const projectHolder = document.querySelector(".cards-container");
-const email = document.getElementById("mail");
-const form = document.getElementById("form");
-const errorElement = document.getElementById("error");
+const mobileBtn = document.getElementById('mobile-cta');
+const nav = document.querySelector('nav');
+const mobileBtnExit = document.getElementById('mobile-exit');
+const portfolioBtn = document.getElementById('menu-portfolio');
+const aboutBtn = document.getElementById('menu-about');
+const contactBtn = document.getElementById('menu-contact');
+const projectHolder = document.querySelector('.cards-container');
+const email = document.getElementById('mail');
+const form = document.getElementById('form');
+const errorElement = document.getElementById('error');
 
 const projects = [
   {
     index: 0,
-    name: "Multi-Post Stories0",
-    title: "Gain+Glory",
+    name: 'Multi-Post Stories0',
+    title: 'Gain+Glory',
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    image: "./images/popup-image.png",
-    technologies: ["ruby on rails", "css", "JavScript", "html"],
-    live: "https://paulinagonzalezc.github.io/portfolio/",
-    source: "https://github.com/paulinagonzalezc/portfolio",
+    image: './images/popup-image.png',
+    technologies: ['ruby on rails', 'css', 'JavScript', 'html'],
+    live: 'https://paulinagonzalezc.github.io/portfolio/',
+    source: 'https://github.com/paulinagonzalezc/portfolio',
   },
   {
     index: 1,
-    name: "Multi-Post Stories1",
-    title: "Gain+Glory",
+    name: 'Multi-Post Stories1',
+    title: 'Gain+Glory',
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    image: "./images/popup-image.png",
-    technologies: ["ruby on rails", "css", "JavScript", "html"],
-    live: "https://paulinagonzalezc.github.io/portfolio/",
-    source: "https://github.com/paulinagonzalezc/portfolio",
+    image: './images/popup-image.png',
+    technologies: ['ruby on rails', 'css', 'JavScript', 'html'],
+    live: 'https://paulinagonzalezc.github.io/portfolio/',
+    source: 'https://github.com/paulinagonzalezc/portfolio',
   },
   {
     index: 2,
-    name: "Multi-Post Stories",
-    title: "Gain+Glory",
+    name: 'Multi-Post Stories',
+    title: 'Gain+Glory',
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    image: "./images/popup-image.png",
-    technologies: ["ruby on rails", "css", "JavScript", "html"],
-    live: "https://paulinagonzalezc.github.io/portfolio/",
-    source: "https://github.com/paulinagonzalezc/portfolio",
+    image: './images/popup-image.png',
+    technologies: ['ruby on rails', 'css', 'JavScript', 'html'],
+    live: 'https://paulinagonzalezc.github.io/portfolio/',
+    source: 'https://github.com/paulinagonzalezc/portfolio',
   },
   {
     index: 3,
-    name: "Multi-Post Stories",
-    title: "Gain+Glory",
+    name: 'Multi-Post Stories',
+    title: 'Gain+Glory',
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    image: "./images/popup-image.png",
-    technologies: ["ruby on rails", "css", "JavScript", "html"],
-    live: "https://paulinagonzalezc.github.io/portfolio/",
-    source: "https://github.com/paulinagonzalezc/portfolio",
+    image: './images/popup-image.png',
+    technologies: ['ruby on rails', 'css', 'JavScript', 'html'],
+    live: 'https://paulinagonzalezc.github.io/portfolio/',
+    source: 'https://github.com/paulinagonzalezc/portfolio',
   },
   {
     index: 4,
-    name: "Multi-Post Stories",
-    title: "Gain+Glory",
+    name: 'Multi-Post Stories',
+    title: 'Gain+Glory',
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    image: "./images/popup-image.png",
-    technologies: ["ruby on rails", "css", "JavScript", "html"],
-    live: "https://paulinagonzalezc.github.io/portfolio/",
-    source: "https://github.com/paulinagonzalezc/portfolio",
+    image: './images/popup-image.png',
+    technologies: ['ruby on rails', 'css', 'JavScript', 'html'],
+    live: 'https://paulinagonzalezc.github.io/portfolio/',
+    source: 'https://github.com/paulinagonzalezc/portfolio',
   },
   {
     index: 5,
-    name: "Multi-Post Stories",
-    title: "Gain+Glory",
+    name: 'Multi-Post Stories',
+    title: 'Gain+Glory',
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    image: "./images/popup-image.png",
-    technologies: ["ruby on rails", "css", "JavScript", "html"],
-    live: "https://paulinagonzalezc.github.io/portfolio/",
-    source: "https://github.com/paulinagonzalezc/portfolio",
+    image: './images/popup-image.png',
+    technologies: ['ruby on rails', 'css', 'JavScript', 'html'],
+    live: 'https://paulinagonzalezc.github.io/portfolio/',
+    source: 'https://github.com/paulinagonzalezc/portfolio',
   },
 ];
 
-mobileBtn.addEventListener("click", () => {
-  nav.classList.add("menu-btn");
+mobileBtn.addEventListener('click', () => {
+  nav.classList.add('menu-btn');
 });
 
-mobileBtnExit.addEventListener("click", () => {
-  nav.classList.remove("menu-btn");
+mobileBtnExit.addEventListener('click', () => {
+  nav.classList.remove('menu-btn');
 });
 
-portfolioBtn.addEventListener("click", () => {
-  nav.classList.remove("menu-btn");
+portfolioBtn.addEventListener('click', () => {
+  nav.classList.remove('menu-btn');
 });
 
-aboutBtn.addEventListener("click", () => {
-  nav.classList.remove("menu-btn");
+aboutBtn.addEventListener('click', () => {
+  nav.classList.remove('menu-btn');
 });
 
-contactBtn.addEventListener("click", () => {
-  nav.classList.remove("menu-btn");
+contactBtn.addEventListener('click', () => {
+  nav.classList.remove('menu-btn');
 });
 
 const createCard = (project) => {
-  const ul = document.createElement("ul");
-  ul.className = "languages";
-  let liList = "";
+  const ul = document.createElement('ul');
+  ul.className = 'languages';
+  let liList = '';
   for (let i = 0; i < project.technologies.length; i += 1) {
     liList += `<li class="language">${project.technologies[i]}</li>`;
   }
 
   ul.innerHTML = liList;
 
-  const tmp = document.createElement("div");
+  const tmp = document.createElement('div');
   tmp.appendChild(ul);
   const ulStirng = tmp.innerHTML;
   const card = `
@@ -135,37 +134,37 @@ const populatePage = (arr) => {
 
 populatePage(projects);
 
-const openModalButtons = document.querySelectorAll("[data-modal-target]");
-let closeModalButtons = document.querySelectorAll("[data-close-button]");
-const overlay = document.getElementById("overlay");
+const openModalButtons = document.querySelectorAll('[data-modal-target]');
+let closeModalButtons = document.querySelectorAll('[data-close-button]');
+const overlay = document.getElementById('overlay');
 
 function openModal(modal) {
   if (modal == null) return;
-  modal.classList.add("active");
-  overlay.classList.add("active");
+  modal.classList.add('active');
+  overlay.classList.add('active');
 }
 
 function closeModal(modal) {
   if (modal == null) return;
-  modal.classList.remove("active");
-  overlay.classList.remove("active");
+  modal.classList.remove('active');
+  overlay.classList.remove('active');
 }
 
 function setCloseModal() {
   closeModalButtons.forEach((button) => {
-    button.addEventListener("click", () => {
-      const modal = button.closest(".modal");
+    button.addEventListener('click', () => {
+      const modal = button.closest('.modal');
       closeModal(modal);
     });
   });
 }
 
 openModalButtons.forEach((button) => {
-  button.addEventListener("click", (event) => {
+  button.addEventListener('click', (event) => {
     const modal = document.querySelector(button.dataset.modalTarget);
-    const id = event.target.id.split("-")[2];
+    const id = event.target.id.split('-')[2];
     const project = projects[id];
-    modal.innerHTML = "";
+    modal.innerHTML = '';
 
     const html = `
     <div class="project-modal">
@@ -208,10 +207,10 @@ openModalButtons.forEach((button) => {
     </div>
     `;
     modal.innerHTML += html;
-    closeModalButtons = document.querySelectorAll("[data-close-button]");
+    closeModalButtons = document.querySelectorAll('[data-close-button]');
 
-    const ul = document.querySelector(".project-languages");
-    ul.innerHTML = "";
+    const ul = document.querySelector('.project-languages');
+    ul.innerHTML = '';
     for (let i = 0; i < project.technologies.length; i += 1) {
       ul.innerHTML += `<li class="project-language">${project.technologies[i]}</li>`;
     }
@@ -222,14 +221,12 @@ openModalButtons.forEach((button) => {
 
 setCloseModal();
 
-//form
-
-form.addEventListener("submit", (e) => {
-  let message = "";
+form.addEventListener('submit', (e) => {
+  let message = '';
 
   function isLowerCase(input) {
-    if ((input == String(input).toLowerCase()) == false) {
-      message = "Please write your email in lowercase";
+    if ((input === String(input).toLowerCase()) === false) {
+      message = '❗️ Please write your email in lowercase';
     }
   }
   isLowerCase(email.value);
