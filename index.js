@@ -252,3 +252,16 @@ nameInput.addEventListener('input', (name) => {
   objectForm.name = name.target.value;
   localStorage.setItem('form', JSON.stringify(objectForm));
 });
+
+email.value = JSON.parse(localStorage.getItem('form'))?.email || '';
+//console.log(email.value);
+email.addEventListener('input', (email) => {
+  const objectForm = JSON.parse(localStorage.getItem('form')) || {
+    name: '',
+    email: '',
+    message: '',
+  };
+  objectForm.email = email.target.value;
+  localStorage.setItem('form', JSON.stringify(objectForm));
+});
+
