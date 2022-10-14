@@ -236,3 +236,40 @@ form.addEventListener('submit', (e) => {
     errorElement.innerText = message;
   }
 });
+
+const nameInput = document.querySelector('.name-input');
+nameInput.value = JSON.parse(localStorage.getItem('form'))?.name || '';
+nameInput.addEventListener('input', (name) => {
+  const objectForm = JSON.parse(localStorage.getItem('form')) || {
+    name: '',
+    email: '',
+    message: '',
+  };
+  objectForm.name = name.target.value;
+  localStorage.setItem('form', JSON.stringify(objectForm));
+});
+
+email.value = JSON.parse(localStorage.getItem('form'))?.email || '';
+// console.log(email.value);
+
+email.addEventListener('input', (email) => {
+  const objectForm = JSON.parse(localStorage.getItem('form')) || {
+    name: '',
+    email: '',
+    message: '',
+  };
+  objectForm.email = email.target.value;
+  localStorage.setItem('form', JSON.stringify(objectForm));
+});
+
+const textInput = document.querySelector('.message-input');
+textInput.value = JSON.parse(localStorage.getItem('form'))?.message || '';
+textInput.addEventListener('input', (message) => {
+  const objectForm = JSON.parse(localStorage.getItem('form')) || {
+    name: '',
+    email: '',
+    message: '',
+  };
+  objectForm.message = message.target.value;
+  localStorage.setItem('form', JSON.stringify(objectForm));
+});
