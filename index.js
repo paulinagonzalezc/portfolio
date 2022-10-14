@@ -221,7 +221,6 @@ openModalButtons.forEach((button) => {
 
 setCloseModal();
 
-//Form
 form.addEventListener('submit', (e) => {
   let message = '';
 
@@ -238,23 +237,21 @@ form.addEventListener('submit', (e) => {
   }
 });
 
-//LOCAL STORAGE
 const nameInput = document.querySelector('.name-input');
 nameInput.value = JSON.parse(localStorage.getItem('form'))?.name || '';
-//console.log(nameInput.value);
 nameInput.addEventListener('input', (name) => {
   const objectForm = JSON.parse(localStorage.getItem('form')) || {
     name: '',
     email: '',
     message: '',
   };
-  //console.log(objectForm);
   objectForm.name = name.target.value;
   localStorage.setItem('form', JSON.stringify(objectForm));
 });
 
 email.value = JSON.parse(localStorage.getItem('form'))?.email || '';
-//console.log(email.value);
+// console.log(email.value);
+
 email.addEventListener('input', (email) => {
   const objectForm = JSON.parse(localStorage.getItem('form')) || {
     name: '',
@@ -266,9 +263,7 @@ email.addEventListener('input', (email) => {
 });
 
 const textInput = document.querySelector('.message-input');
-//console.log(textInput);
 textInput.value = JSON.parse(localStorage.getItem('form'))?.message || '';
-//console.log(textInput.value);
 textInput.addEventListener('input', (message) => {
   const objectForm = JSON.parse(localStorage.getItem('form')) || {
     name: '',
@@ -276,6 +271,5 @@ textInput.addEventListener('input', (message) => {
     message: '',
   };
   objectForm.message = message.target.value;
-  //console.log(objectForm.message);
   localStorage.setItem('form', JSON.stringify(objectForm));
 });
