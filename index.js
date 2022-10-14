@@ -265,3 +265,17 @@ email.addEventListener('input', (email) => {
   localStorage.setItem('form', JSON.stringify(objectForm));
 });
 
+const textInput = document.querySelector('.message-input');
+//console.log(textInput);
+textInput.value = JSON.parse(localStorage.getItem('form'))?.message || '';
+//console.log(textInput.value);
+textInput.addEventListener('input', (message) => {
+  const objectForm = JSON.parse(localStorage.getItem('form')) || {
+    name: '',
+    email: '',
+    message: '',
+  };
+  objectForm.message = message.target.value;
+  //console.log(objectForm.message);
+  localStorage.setItem('form', JSON.stringify(objectForm));
+});
