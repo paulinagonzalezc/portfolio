@@ -221,6 +221,7 @@ openModalButtons.forEach((button) => {
 
 setCloseModal();
 
+//Form
 form.addEventListener('submit', (e) => {
   let message = '';
 
@@ -235,4 +236,19 @@ form.addEventListener('submit', (e) => {
     e.preventDefault();
     errorElement.innerText = message;
   }
+});
+
+//LOCAL STORAGE
+const nameInput = document.querySelector('.name-input');
+nameInput.value = JSON.parse(localStorage.getItem('form'))?.name || '';
+//console.log(nameInput.value);
+nameInput.addEventListener('input', (name) => {
+  const objectForm = JSON.parse(localStorage.getItem('form')) || {
+    name: '',
+    email: '',
+    message: '',
+  };
+  //console.log(objectForm);
+  objectForm.name = name.target.value;
+  localStorage.setItem('form', JSON.stringify(objectForm));
 });
