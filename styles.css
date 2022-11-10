@@ -1,12 +1,13 @@
 body {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   display: flex;
   justify-content: center;
+  margin: 0;
 }
 
 .container {
   border: 1px solid #ccc;
-  background-image: url("images/header-ilustration.png");
+  background-image: url('images/header-ilustration.png');
   background-repeat: no-repeat;
   background-size: contain;
   background-position-y: 40px;
@@ -72,7 +73,7 @@ nav {
 .primary-nav a {
   text-decoration: none;
   color: #172b4d;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 500;
   font-size: 32px;
   display: block;
@@ -168,7 +169,7 @@ nav {
 
 .works-title {
   font-size: 40px;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 52px;
   color: #172b4d;
   margin-bottom: 24px;
@@ -238,6 +239,9 @@ nav {
   top: 31px;
   z-index: 2;
   cursor: pointer;
+  background: whitesmoke;
+  border-radius: 3px;
+  padding: 2px;
 }
 
 .popup-image {
@@ -249,7 +253,7 @@ nav {
 }
 
 .popup-title {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 25px;
@@ -278,7 +282,7 @@ nav {
 }
 
 .popup-description {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -289,6 +293,7 @@ nav {
 .buttons-container {
   display: flex;
   justify-content: space-between;
+  margin-top: 20px;
 }
 
 .see-live,
@@ -297,7 +302,7 @@ nav {
   background: #36b37f;
   border-radius: 4px;
   border: none;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -329,17 +334,25 @@ nav {
   left: 3px;
 }
 
+.preview-image {
+  width: 260px;
+  height: 170px;
+  border: 10px solid whitesmoke;
+  border-radius: 10px;
+}
+
 .cards-container {
   display: grid;
-  grid-template-columns: auto 327px auto;
+  grid-template-columns: auto 280px auto;
 }
 
 .work-card {
   grid-column: 2;
   background: #ebf0ee;
-  border: 1px solid #d0d9d4;
+  border: none;
+  box-shadow: rgba(99, 99, 99, 0.2) 0 2px 8px 0;
   border-radius: 8px;
-  width: 327px;
+  width: 280px;
   margin-bottom: 24px;
 }
 
@@ -348,6 +361,7 @@ nav {
   display: flex;
   justify-content: center;
   margin-top: 0;
+  font-size: 16px;
 }
 
 .card-title1 {
@@ -355,7 +369,7 @@ nav {
 }
 
 .card-content {
-  margin-top: 251px;
+  /* margin-top: 251px; */
   border-radius: 8px;
   padding: 16px;
   background: #fff;
@@ -363,8 +377,8 @@ nav {
 
 .languages {
   display: flex;
-  justify-content: space-between;
-  font-size: 12px;
+  justify-content: center;
+  font-size: 10px;
   font-weight: 600;
   list-style-type: none;
   padding: 0;
@@ -375,7 +389,9 @@ nav {
 .language {
   background: #ebf0ee;
   border-radius: 4px;
-  padding: 8px 12px;
+  padding: 7px 10px;
+  margin-right: 2px;
+  margin-left: 2px;
   flex: none;
   order: 3;
 }
@@ -383,17 +399,17 @@ nav {
 .button-container {
   display: flex;
   justify-content: center;
-  margin-top: 29px;
-  margin-bottom: 15px;
+  margin-top: 22px;
+  margin-bottom: 13px;
 }
 
 .project-button {
   border: none;
   background: #36b37f;
   border-radius: 4px;
-  width: 122px;
-  height: 48px;
-  font-size: 17px;
+  width: 100px;
+  height: 30px;
+  font-size: 13px;
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 0.03em;
@@ -418,6 +434,7 @@ nav {
   text-align: center;
   margin-bottom: 24px;
   color: #172b4d;
+  z-index: 2;
 }
 
 .resume-button-container {
@@ -448,6 +465,7 @@ nav {
 .resume-image1 {
   height: 127px;
   width: 68px;
+  z-index: 1;
 }
 
 .resume-image2 {
@@ -461,9 +479,9 @@ nav {
 }
 
 .resume-description {
-  font-size: 20px;
+  font-size: 15px;
   font-weight: 300;
-  line-height: 32px;
+  line-height: 30px;
   text-align: center;
   color: #42526e;
   margin: 0 12px 24px;
@@ -514,7 +532,7 @@ nav {
 
 .languages2 {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   font-size: 12px;
   font-weight: 600;
   list-style-type: none;
@@ -578,9 +596,9 @@ nav {
 }
 
 .about-interest {
-  font-size: 40px;
+  font-size: 35px;
   font-weight: 700;
-  line-height: 52px;
+  line-height: 48px;
   text-align: center;
   margin-bottom: 24px;
   color: #172b4d;
@@ -600,7 +618,7 @@ nav {
   font-weight: 400;
   font-size: 15px;
   font-style: normal;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 .name-input {
@@ -627,7 +645,7 @@ nav {
   font-weight: 400;
   font-size: 15px;
   font-style: normal;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 .message-input {
@@ -650,11 +668,11 @@ nav {
   border: none;
   background: #36b37f;
   border-radius: 4px;
-  width: 129px;
-  height: 48px;
-  font-size: 17px;
+  width: 120px;
+  height: 43px;
+  font-size: 15px;
   font-weight: 500;
-  line-height: 24px;
+  line-height: 22px;
   letter-spacing: 0.03em;
   text-align: center;
   color: #fff;
@@ -673,7 +691,7 @@ nav {
 }
 
 .error-form {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 32px;
@@ -720,8 +738,8 @@ nav {
 }
 
 .my-mail {
-  font-family: "Inter", sans-serif;
-  font-size: 20px;
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
   font-weight: 400;
   line-height: 32px;
   text-align: center;
@@ -744,7 +762,7 @@ nav {
 
 @media (min-width: 768px) {
   .container {
-    background-image: url("./images/Header-llustration-desktop.png");
+    background-image: url('./images/Header-llustration-desktop.png');
     background-size: 100%;
     background-position-y: -10px;
     background-position-x: 20px;
@@ -786,17 +804,17 @@ nav {
   }
 
   .primary-nav a {
-    font-size: 20px;
+    font-size: 18px;
     text-decoration: none;
     color: #172b4d;
-    font-family: "Inter", sans-serif;
+    font-family: 'Inter', sans-serif;
     font-weight: 500;
     padding: 0 16px;
   }
 
   .present {
     font-weight: 1000;
-    font-size: 48px;
+    font-size: 40px;
     line-height: normal;
   }
 
@@ -849,7 +867,7 @@ nav {
   .work-container {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
-    margin-top: 465px;
+    margin-top: 370px;
     margin-bottom: 52px;
   }
 
@@ -891,7 +909,7 @@ nav {
   }
 
   .project-modal {
-    height: 570px;
+    /* height: 570px; */
     width: 500px;
     border-radius: 8px;
     padding-top: 0;
@@ -911,14 +929,14 @@ nav {
 
   .popup-image {
     width: 480px;
-    height: 320px;
+    height: 300px;
     padding-top: 18px;
     padding-left: 10px;
     padding-right: 10px;
   }
 
   .popup-title {
-    font-family: "Inter", sans-serif;
+    font-family: 'Inter', sans-serif;
     font-weight: 700;
     font-size: 20px;
     line-height: 44px;
@@ -940,7 +958,7 @@ nav {
   }
 
   .popup-description {
-    font-family: "Inter", sans-serif;
+    font-family: 'Inter', sans-serif;
     font-weight: 400;
     font-size: 10px;
     line-height: 20px;
@@ -952,7 +970,6 @@ nav {
     display: flex;
     justify-content: flex-end;
     position: relative;
-    top: -195px;
   }
 
   .see-live,
@@ -961,7 +978,7 @@ nav {
     background: #36b37f;
     border-radius: 4px;
     border: none;
-    font-family: "Inter", sans-serif;
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
@@ -1004,17 +1021,24 @@ nav {
     transform: scale(1.05);
   }
 
+  .preview-image {
+    width: 260px;
+    height: 170px;
+    border: 10px solid whitesmoke;
+    border-radius: 10px;
+  }
+
   .cards-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    column-gap: 24px;
+    column-gap: 5px;
     row-gap: 20px;
   }
 
   .resume {
     color: #172b4d;
-    font-family: "Inter", sans-serif;
+    font-family: 'Inter', sans-serif;
     margin-top: 192px;
   }
 
@@ -1023,11 +1047,17 @@ nav {
     justify-content: center;
   }
 
+  .about-me-container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
   .resume-title {
+    text-align: center;
     font-size: 40px;
     font-weight: 700;
     line-height: 52px;
-    text-align: center;
     margin-bottom: 15px;
     color: #172b4d;
     margin-left: 0;
@@ -1044,7 +1074,7 @@ nav {
     background: #36b37f;
     border-radius: 4px;
     width: 159px;
-    height: 48px;
+    height: 45px;
     font-size: 17px;
     font-weight: 500;
     line-height: 24px;
@@ -1097,7 +1127,7 @@ nav {
     grid-column: 2;
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 32px;
     margin: 10px 24px;
     text-align: center;
@@ -1175,7 +1205,7 @@ nav {
   }
 
   .error-form {
-    font-family: "Inter", sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 15px;
     font-weight: 400;
     line-height: 32px;
