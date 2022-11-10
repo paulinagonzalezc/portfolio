@@ -239,6 +239,9 @@ nav {
   top: 31px;
   z-index: 2;
   cursor: pointer;
+  background: whitesmoke;
+  border-radius: 3px;
+  padding: 2px;
 }
 
 .popup-image {
@@ -290,6 +293,7 @@ nav {
 .buttons-container {
   display: flex;
   justify-content: space-between;
+  margin-top: 20px;
 }
 
 .see-live,
@@ -330,6 +334,13 @@ nav {
   left: 3px;
 }
 
+.preview-image {
+  width: 260px;
+  height: 170px;
+  border: 10px solid whitesmoke;
+  border-radius: 10px;
+}
+
 .cards-container {
   display: grid;
   grid-template-columns: auto 280px auto;
@@ -338,7 +349,8 @@ nav {
 .work-card {
   grid-column: 2;
   background: #ebf0ee;
-  border: 1px solid #d0d9d4;
+  border: none;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   border-radius: 8px;
   width: 280px;
   margin-bottom: 24px;
@@ -357,7 +369,7 @@ nav {
 }
 
 .card-content {
-  margin-top: 251px;
+  /* margin-top: 251px; */
   border-radius: 8px;
   padding: 16px;
   background: #fff;
@@ -365,7 +377,7 @@ nav {
 
 .languages {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   font-size: 10px;
   font-weight: 600;
   list-style-type: none;
@@ -396,7 +408,7 @@ nav {
   background: #36b37f;
   border-radius: 4px;
   width: 100px;
-  height: 35px;
+  height: 30px;
   font-size: 13px;
   font-weight: 500;
   line-height: 24px;
@@ -520,7 +532,7 @@ nav {
 
 .languages2 {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   font-size: 12px;
   font-weight: 600;
   list-style-type: none;
@@ -897,7 +909,7 @@ nav {
   }
 
   .project-modal {
-    height: 570px;
+    /* height: 570px; */
     width: 500px;
     border-radius: 8px;
     padding-top: 0;
@@ -917,7 +929,7 @@ nav {
 
   .popup-image {
     width: 480px;
-    height: 320px;
+    height: 300px;
     padding-top: 18px;
     padding-left: 10px;
     padding-right: 10px;
@@ -958,7 +970,6 @@ nav {
     display: flex;
     justify-content: flex-end;
     position: relative;
-    top: -195px;
   }
 
   .see-live,
@@ -1010,16 +1021,20 @@ nav {
     transform: scale(1.05);
   }
 
+  .preview-image {
+    width: 260px;
+    height: 170px;
+    border: 10px solid whitesmoke;
+    border-radius: 10px;
+  }
+
   .cards-container {
     display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr; */
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     column-gap: 5px;
     row-gap: 20px;
-  }
-
-  .card-content {
-    margin-top: 220px;
   }
 
   .resume {

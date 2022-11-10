@@ -12,36 +12,36 @@ const errorElement = document.getElementById('error');
 const projects = [
   {
     index: 0,
-    name: 'Multi-Post Stories0',
-    title: 'Gain+Glory',
+    name: 'Creative Writing Course',
+    title: 'Landing Page',
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    image: './images/popup-image.png',
-    technologies: ['ruby on rails', 'css', 'JavScript', 'html'],
-    live: 'https://paulinagonzalezc.github.io/portfolio/',
-    source: 'https://github.com/paulinagonzalezc/portfolio',
+      'A website for a creative writing course. Built using JavaScript, HTML & CSS',
+    image: './images/capstone1.png',
+    technologies: ['CSS', 'JavaScript', 'HTML'],
+    live: 'https://paulinagonzalezc.github.io/capstone-one/',
+    source: 'https://github.com/paulinagonzalezc/capstone-one',
   },
   {
     index: 1,
-    name: 'Multi-Post Stories1',
-    title: 'Gain+Glory',
+    name: 'Weather App',
+    title: 'React',
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    image: './images/popup-image.png',
-    technologies: ['ruby on rails', 'css', 'JavScript', 'html'],
-    live: 'https://paulinagonzalezc.github.io/portfolio/',
-    source: 'https://github.com/paulinagonzalezc/portfolio',
+      'A weather app designed to show the current weather and forecast of a city. Users can use the search bar to look for a city. Built with React.',
+    image: './images/weather-app-image.png',
+    technologies: ['React.js', 'CSS', 'HTML'],
+    live: 'https://weatherreact-paulina.netlify.app',
+    source: 'https://github.com/paulinagonzalezc/weather-react-app',
   },
   {
     index: 2,
-    name: 'Multi-Post Stories',
-    title: 'Gain+Glory',
+    name: 'Dictionary App',
+    title: 'React',
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    image: './images/popup-image.png',
-    technologies: ['ruby on rails', 'css', 'JavScript', 'html'],
-    live: 'https://paulinagonzalezc.github.io/portfolio/',
-    source: 'https://github.com/paulinagonzalezc/portfolio',
+      'This is a dictionary app. Users can search for a word and get definitions, synonyms, hear the pronunciation, used in a sentence and images. Build with React.',
+    image: './images/dictionary-screenshot.png',
+    technologies: ['React.js', 'CSS', 'HTML'],
+    live: 'https://dictionaryreact-paulina.netlify.app/',
+    source: 'https://github.com/paulinagonzalezc/dictionary-react',
   },
   {
     index: 3,
@@ -113,6 +113,7 @@ const createCard = (project) => {
   const ulStirng = tmp.innerHTML;
   const card = `
           <div class="work-card">
+          <img src="${project.image}" class="preview-image"/>
             <div class="card-content">
               <h3 class="card-title1">${project.name}</h3>
               <h3 class="card-title2">${project.title}</h3>
