@@ -350,7 +350,7 @@ nav {
   grid-column: 2;
   background: #ebf0ee;
   border: none;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0 2px 8px 0;
   border-radius: 8px;
   width: 280px;
   margin-bottom: 24px;
@@ -1030,7 +1030,6 @@ nav {
 
   .cards-container {
     display: grid;
-    /* grid-template-columns: 1fr 1fr 1fr; */
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     column-gap: 5px;
